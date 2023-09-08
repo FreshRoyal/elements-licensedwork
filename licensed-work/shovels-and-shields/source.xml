@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Shovels and Shields Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/source.xml" />
+		</update>
+	</info>
+	<element name="Shovel Knight: Shovels and Shields" type="Source" source="Core" id="ID_YCG_SOURCE_SHOVELS_AND_SHIELDS">
+		<description>
+			<p>I’m sure you’ve had the thought “Gee, I’m having a lot of fun role-playing as a half-elf druid, but I wish my class had more knightly poise, a unique item-based combat system and a focus on weapon specialization!” We know the feeling, we’ve all been there. Luckily, Shovel Knight, Shield Knight, and Specter Knight are here to help you out of that rut!</p>
+			<p class="indent">Introducing the Knight class with 4 subclasses for all your roleplaying needs. This includes a subclass specially crafted to allow you to bring your own custom knight to life! Finally, those knight doodles on the sides of all your math notes can become real! Well, imaginary real.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">SKSS</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/SKSS.png</set>
+			<set name="url">https://adamcohen.myportfolio.com/shovel-knight-bringing-platformers-to-tabletop</set>
+			<set name="author" abbreviation="YCG" url="https://www.yachtclubgames.com/">Adam Cohen. Yacht Club Games</set>
+			<set name="release">20200401</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

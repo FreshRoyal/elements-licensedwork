@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Relics from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="relics.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/relics.xml" />
+		</update>
+	</info>
+
+	<element name="Alchemy Coin (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_ALCHEMY_COIN">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>You may use your action to make a proficient ranged attack with this. Strike it and deal 1d6 bludgeoning damage. The coin flies back to you. You may spend Ichor to strike it back at your enemy. Successive damage from the alchemy coin deals 1 die tier lower in damage (1d4, 1d2, 1d1) , and you may not add your Dexterity Bonus to the damage of these rolls.</p>
+		</description>
+		<sheet alt="Alchemy Coin" action="Action">
+			<description>You make a ranged attack (Attack Modifier: +{{relic:coin:attack}}). It deals 1d6 bludgeoning. The coin flies back to you. You may spend Ichor to strike it back at your enemy. Successive damage from the alchemy coin deals 1 die tier lower in damage (1d4, 1d2, 1d1), and you may not add your dexterity modifier to the damage of these rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:coin:attack" value="proficiency" />
+			<stat name="relic:coin:attack" value="dexterity:modifier" />
+		</rules>
+	</element>
+
+	<element name="Alchemists Armored Arms of Arming (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_ALCHEMISTS_ARMORED_ARMS_OF_ARMING">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>2 Relic Points, 5th level</em></p>
+			<p>The product of a cult of alchemists, these gauntlets coat your attacks with a strange toxin. Your Weapons of Devotion deal an extra 1d4 acid damage on a successful hit.</p>
+		</description>
+		<sheet alt="Alchemists Armored Arms of Arming">
+			<description>Your Weapons of Devotion deal an extra 1d4 acid.</description>
+		</sheet>
+	</element>
+
+	<element name="Bomb Burst Bottle (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_BOMB_BURST_BOTTLE">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>This bulbous bottle of brilliant blue brew allows you to take 4 force damage in exchange for advantage on one Dexterity Saving Throw. You must choose to use the Bottle before a roll is made. You may use this ability twice per day.</p>
+		</description>
+		<sheet alt="Bomb Burst Bottle" usage="2/Day">
+			<description>You take 4 force damage in exchange for advantage on one dexterity saving throw. You must choose to use the Bottle before a roll is made.</description>
+		</sheet>
+	</element>
+
+	<element name="Boots of Spring Loading (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_BOOTS_OF_SPRING_LOADING">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level, Code of Shovelry</prerequisite>
+		<requirements>[level:5],ID_YCG_SKSS_ARCHETYPE_KNIGHT_SHOVELRY</requirements>
+		<description>
+			<p><em>1 Relic Point, 5th level, Code of Shovelry</em></p>
+			<p>When using the Shovel Drop ability, your range increases from 10 feet to 15 feet.</p>
+		</description>
+		<sheet alt="Boots of Spring Loading">
+			<description>Your Shovel Drop range increases to 15 ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Chronos Coin (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_CHRONOS_COIN">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>14th level</prerequisite>
+		<requirements>[level:14]</requirements>
+		<description>
+			<p><em>1 Relic Point, 14th level</em></p>
+			<p>As a bonus action you may spend 7 Ichor to take a second turn this round. This effect cannot stack.</p>
+		</description>
+		<sheet alt="Chronos Coin" action="Bonus Action">
+			<description>You may spend 7 Ichor to take a second turn this round. This effect cannot stack.</description>
+		</sheet>
+	</element>
+	
+	<element name="Cloak of Shadows (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_CLOAK_OF_SHADOWS">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>7th level, Code of Torment</prerequisite>
+		<requirements>[level:7],ID_YCG_SKSS_ARCHETYPE_KNIGHT_TORMENT</requirements>
+		<description>
+			<p><em>1 Relic Point, 7th level, Code of Torment</em></p>
+			<p>This cloak is enchanted with the powers of darkness. Choose an enemy whose shadow is within line of sight and no further than 40 feet away. You can teleport to their shadow. You cannot teleport to or from difficult terrain and the enemy must be casting a shadow. You appear directly on top of their shadow. If it is behind them, roll a stealth check to see if you gain stealth. This stealth bonus cannot be conferred after the first time in combat if an enemy has seen it.</p>
+		</description>
+		<sheet alt="Cloak of Shadows">
+			<description>Choose an enemy whose shadow is within line of sight and within 40 ft. You can teleport to their shadow. You cannot teleport to or from difficult terrain. You appear directly on top of their shadow. If it is behind them, roll a stealth check to see if you gain stealth. This stealth bonus cannot be conferred after the first time in combat if an enemy has seen it.</description>
+		</sheet>
+	</element>
+
+	<element name="Cloak of Slashing (5 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_CLOAK_OF_SLASHING">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>Code of Torment</prerequisite>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_KNIGHT_TORMENT</requirements>
+		<description>
+			<p><em>5 Relic Points, Code of Torment</em></p>
+			<p>When using Upheaving Swing, following up with a Dash Slash no longer costs Ichor.</p>
+		</description>
+		<sheet alt="Cloak of Slashing">
+			<description>When using Upheaving Swing, following up with a Dash Slash no longer costs Ichor.</description>
+		</sheet>
+	</element>
+	
+	<element name="Dust Knuckles (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_DUST_KNUCKLES">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You may spend 2 Ichor Points to perform an attack against a target within 10 feet. The target must succeed on a Strength Saving Throw against your Ichor DC or suffer disadvantage on their next attack made against you.</p>
+		</description>
+		<sheet alt="Dust Knuckles">
+			<description>You may spend 2 Ichor Points to perform an attack against a target within 10 ft. The target must succeed on a Strength saving throw (DC:{{ichor:dc}}) or suffer disadvantage on their next attack made against you.</description>
+		</sheet>
+	</element>
+
+	<element name="Electrified Ringlets (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_ELECTRIFIED_RINGLETS">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>2 Relic Points, 5th level</em></p>
+			<p>This ancient set of gloved ringlets still crackle with the power of storms. Your Weapon of Devotion deal an extra 1d4 lightning damage on a successful hit.</p>
+		</description>
+		<sheet alt="Electrified Ringlets">
+			<description>Your Weapons of Devotion deal an extra 1d4 lightning.</description>
+		</sheet>
+	</element>
+
+	<element name="Farsight of the Submariner (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FARSIGHT_OF_THE_SUBMARINER">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>While wearing these spectacles, your eyes cast light that aides you in areas of dim light or darkness. You gain darkvision out to 60 feet or increasing your current dark vision abilities by 60 feet.</p>
+		</description>
+		<sheet alt="Farsight of the Submariner">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
+
+	<element name="Fishfellow's Scale (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FISHFELLOWS_SCALE">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>You gain the ability to speak and understand Language (Aquan). In addition, you can hold your breath for twice as long when submerged and can move up to your full movement speed when swimming, as you feel oddly comfortable under water.</p>
+		</description>
+		<sheet alt="Fishfellow's Scale">
+			<description>You can hold your breath for twice as long when submerged.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+			<stat name="speed:swim" value="speed" />
+		</rules>
+	</element>
+
+	<element name="Fishing Rod (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FISHING_ROD">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You are proficient with fishing tools while in possession of this relic. As a reaction, when an allied creature within 15 feet is hit with a melee attack, you may spend 1 Ichor and grant them the benefits of the Dodge action, imposing disadvantage on the attack roll. You may spend an additional Ichor to increase the range to 25 feet. You may only use this ability once per round.</p>
+		</description>
+		<sheet alt="Fishing Rod" action="Reaction" usage="1/Round">
+			<description>When an allied creature within 15 ft is hit with a melee attack, you may spend 1 Ichor and grant them the benefits of the Dodge action. You may spend an additional Ichor to increase the range to 25 ft.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_TOOL_PROFICIENCY_FISHING_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Flaming Fists of the Furnace (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FLAMING_FISTS_OF_THE_FURNACE">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>2 Relic Points, 5th level</em></p>
+			<p>These insulated gloves were found floating in pit of magma, likely left by some brave adventurer trying to be clever. Your Weapons of Devotion deal an extra 1d4 fire damage on a successful hit.</p>
+		</description>
+		<sheet alt="Flaming Fists of the Furnace">
+			<description>Your Weapons of Devotion deal an extra 1d4 fire.</description>
+		</sheet>
+	</element>
+
+	<element name="Flare Wand (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FLARE_WAND">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>A wand enchanted with the power of flame by an ancient artificer. Spend 1 Ichor to make a ranged attack against a target. On a hit the target takes 1d8 fire damage + Your Wisdom Modifier. Your next attack against this target within 10 minutes is made with advantage.</p>
+		</description>
+		<sheet alt="Flare Wand">
+			<description>Spend 1 Ichor to make a ranged attack against a target. On a hit the target takes 1d8 fire damage + {{wisdom:modifier}}. Your next attack against this target within 10 minutes is made with advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Glass Orb of Checking's Point" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_GLASS_ORB_OF_CHECKINGS_POINT">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>3rd level</prerequisite>
+		<requirements>[level:3]</requirements>
+		<description>
+			<p><em>2 Relic Points, 3rd level</em></p>
+			<p>You gain an Ichor infused totem that grants one additional Ichor that can exceed your maximum. By spending 1 Ichor during rest you may shatter the mysterious orb and gain an additional 1d6 hitpoints or 1d4 temporary hit points. The Orb reforms during your next short or long rest.</p>
+		</description>
+		<sheet alt="Glass Orb of Checking's Point" usage="1/Short Rest">
+			<description> You can spend 1 Ichor during rest to shatter the mysterious orb and gain an additional 1d6 hp or 1d4 temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="ichor:points" value="1" />
+		</rules>
+	</element>
+
+	<element name="Guardian's Locket (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_GUARDIANS_LOCKET">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>As an action you may use this locket to stabilize one ally within 5 feet. You may also spend up to 3 Ichor to heal the target 1d6 per Ichor spent. You must take a long rest before using this ability again.</p>
+		</description>
+		<sheet alt="Guardian's Locket" action="Action" usage="1/Long Rest">
+			<description>You may use this locket to stabilize one ally within 5 ft. You may also spend up to 3 Ichor to heal the target 1d6 per Ichor spent.</description>
+		</sheet>
+	</element>
+
+	<element name="Healing Hammer (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_HEALING_HAMMER">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>Who says medicine can't be delivered violently? You gain a Light Hammer and are proficient with it for the purposes of combat. You may spend 1 Ichor to make an attack against a target. A creature you strike with this hammer regains a number of hit points equal to 1d10 + your Wisdom Modifier and simultaneously takes 1d4 + half your Dex Modifier (rounded up) in bludgeoning damage.</p>
+			<p class="indent">Critical hits apply to both dice rolls on a success. You must finish a short rest before using this feature again. Huzzah!</p>
+		</description>
+		<sheet alt="Healing Hammer" usage="1/Short Rest">
+			<description>You may spend 1 Ichor to make an attack against a target (Attack Modifier: {{relic:healing:attack}}). A creature you strike with this hammer regains  1d10 + {{wisdom:modifier}} and simultaneously takes 1d4 + {{dexterity:modifier:half:up}} bludgeoning. Critical hits apply to both dice rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:healing:attack" value="proficiency" />
+			<stat name="relic:healing:attack" value="dexterity:modifier" />
+		</rules>
+	</element>
+
+	<element name="Hilt of the Ethereal Blade (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_HILT_OF_THE_ETHEREAL_BLADE">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>When making attacks with advantage or while hidden, you can spend 1 Ichor to add an additional 2d4 slashing damage to your rolls. At 15th Level, this changes to 2d6 slashing damage.</p>
+		</description>
+		<sheet alt="Hilt of the Ethereal Blade">
+			<description>When making attacks with advantage or while hidden, you can spend 1 Ichor to add an additional 2d4 slashing to your attacks.</description>
+			<description level="15">When making attacks with advantage or while hidden, you can spend 1 Ichor to add an additional 2d4 slashing to your attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Palchemy Jar (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_PALCHEMY_JAR">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>2 Relic Points, 5th level</em></p>
+			<p>As a movement action you may use the Palchemy Jar and dive inside it in an attempt to flee your current location. Choose one ally and one enemy within line of sight. Roll on the table below.</p>
+			<table>
+				<thead>
+					<tr><td>d6</td><td>Result</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Reversal</td></tr>
+					<tr><td>2-5</td><td>Ally</td></tr>
+					<tr><td>6</td><td>Enemy</td></tr>
+				</tbody>
+			</table>
+			<p class="indent">Based on your roll, you teleport to the chosen target. If you roll a Reversal, roll again on the table until you get a different result. That target must now succeed on a Wisdom Saving Throw or be teleported within 5 feet of you on safe ground. This ability cannot be used again until you complete a short or long rest.</p>
+		</description>
+		<sheet alt="Palchemy Jar" action="Movement" usage="1/Short Rest">
+			<description>Choose one ally and one enemy within line of sight, and roll a d6. On roll of 2-5 you teleport to the chosen ally, on 6 you teleport to the chosen enemy, on 1 you must roll again until you get 2-6 and rolled target instead teleports to you.</description>
+		</sheet>
+	</element>
+
+	<element name="Percy's Tome of Admiration (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_PERCYS_TOME_OF_ADMIRATION">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You gain a single use of the <i>Charm Person</i> spell per long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_CHARM_PERSON" />
+			</div>
+		</description>
+		<sheet alt="Percy's Tome of Admiration" usage="1/Long Rest">
+			<description>You can cast charm person.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CHARM_PERSON" />
+		</rules>
+	</element>
+
+	<element name="Phase Locket (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_PHASE_LOCKET">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>You may use your reaction to reduce the damage of an incoming attack by 1d6. This ability cannot be used again until you complete a long rest.</p>
+		</description>
+		<sheet alt="Phase Locket" action="Reaction" usage="1/Long Rest">
+			<description>You can reduce the damage of an incoming attack by 1d6.</description>
+		</sheet>
+	</element>
+
+	<element name="Polar Pincers (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_POLAR_PINCERS">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>5th level</prerequisite>
+		<requirements>[level:5]</requirements>
+		<description>
+			<p><em>2 Relic Points, 5th level</em></p>
+			<p>These frigid and spikey gloves invigorate your strikes with frost, forever enchanted with the northern winds. Your Weapon of Devotion deals an extra 1d4 cold damage when it hits.</p>
+		</description>
+		<sheet alt="Polar Pincers">
+			<description>Your Weapons of Devotion deal an extra 1d4 cold.</description>
+		</sheet>
+	</element>
+
+	<element name="Quickbag of Questionable Convenience (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_QUICKBAG_OF_QUESTIONABLE_CONVENIENCE">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>4th level</prerequisite>
+		<requirements>[level:4]</requirements>
+		<description>
+			<p><em>1 Relic Point, 4th level</em></p>
+			<p>You may spend 1 ichor and 10 gold to create 1 common nonmagical item under 2 pounds. You cannot use this ability to produce consumables or sentient beings.</p>
+		</description>
+		<sheet alt="Quickbag of Questionable Convenience">
+			<description>You may spend 1 ichor and 10 gold to create 1 common nonmagical item under 2 lbs. You cannot produce consumables or sentient beings.</description>
+		</sheet>
+	</element>
+
+	<element name="Rail Mail (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_RAIL_MAIL">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>3rd level, Code of Torment</prerequisite>
+		<requirements>[level:3],ID_YCG_SKSS_ARCHETYPE_KNIGHT_TORMENT</requirements>
+		<description>
+			<p><em>2 Relic Points, 3rd level, Code of Torment</em></p>
+			<p>As a bonus action, you may mount your scythe. Pick a single direction to travel in: Your move speed increases by 10 feet while moving in this direction and you must voluntarily move this way 10 feet or more per round. You may only travel in your chosen direction. On your turn you may also:</p>
+			<ul>
+				<li>Succeed on a DC 15 Acrobatics check to dismount.</li>
+				<li>Make an attack against an opponent within range. On a successful hit, you dismount and deal an additional d6 slashing damage.</li>
+			</ul>
+			<p class="indent">During your travel, terrain is not considered difficult. Colliding with obstacles or enemies ends your movement prematurely and you are knocked prone. At 15th Level, the bonus damage die increases to a d10.</p>
+		</description>
+		<sheet alt="Rail Mail" action="Bonus Action">
+			<description>You may mount your scythe. Pick a single direction to travel in: Your move speed increases by 10 ft while moving in this direction. You must voluntarily move this way 10 ft or more per round. You may only travel in your chosen direction. You may also:
+			• Succeed on a DC 15 Acrobatics check to dismount.
+			• Make an attack against an opponent within range. On a hit, you dismount and deal an extra d6 slashing.
+			uring your travel, terrain is not considered difficult. Colliding with obstacles or enemies ends your movement early and you are knocked prone.</description>
+			<description level="15">You may mount your scythe. Pick a single direction to travel in: Your move speed increases by 10 ft while moving in this direction. You must voluntarily move this way 10 ft or more per round. You may only travel in your chosen direction. You may also:
+			• Succeed on a DC 15 Acrobatics check to dismount.
+			• Make an attack against an opponent within range. On a hit, you dismount and deal an extra d10 slashing.
+			uring your travel, terrain is not considered difficult. Colliding with obstacles or enemies ends your movement early and you are knocked prone.</description>
+		</sheet>
+	</element>
+
+	<element name="Reaper's Mask (3 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_REAPERS_MASK">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p><em>3 Relic Points, 7th level</em></p>
+			<p>You gain a single use of the <i>Fear</i> spell per long rest.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_FEAR" />
+			</div>
+		</description>
+		<sheet alt="Reaper's Mask" usage="1/Long Rest">
+			<description>You can cast fear.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" />
+		</rules>
+	</element>
+
+	<element name="Ring of the Shield Striker (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_RING_OF_THE_SHIELD_STRIKER">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>3rd level, Code of Aegis</prerequisite>
+		<requirements>[level:3],ID_YCG_SKSS_ARCHETYPE_KNIGHT_AEGIS</requirements>
+		<description>
+			<p><em>2 Relic Points, 3rd level, Code of Aegis</em></p>
+			<p>When throwing your shield, you may spend 1 Ichor to have your opponent make a Dexterity Saving Throw. On a failure, your shield bounces off a nearby surface and strikes the target from behind, knocking them 10 feet closer toward you.</p>
+		</description>
+		<sheet alt="Ring of the Shield Striker">
+			<description>You may spend 1 Ichor to have your opponent make a Dexterity saving throw. On a failure, your shield bounces off a nearby surface and strikes the target from behind, knocking them 10 ft closer toward you.</description>
+		</sheet>
+	</element>
+
+	<element name="Royal Degree (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_ROYAL_DEGREE">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>While in possession of this relic, you gain proficiency in Persuasion checks. This degree appears to have been granted by The Royal College of Magics, which is entirely fictitious.</p>
+		</description>
+		<sheet alt="Royal Degree">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Runic Spade Holster (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_RUNIC_SPADE_HOLSTER">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>11th level, Code of Shovelry</prerequisite>
+		<requirements>[level:11],ID_YCG_SKSS_ARCHETYPE_KNIGHT_SHOVELRY</requirements>
+		<description>
+			<p><em>2 Relic Points, 11th level, Code of Shovelry</em></p>
+			<p><i>Returned in Spades</i> may also deflect damage from magical ranged attacks that target you.</p>
+		</description>
+		<sheet alt="Runic Spade Holster">
+			<description>Returned in Spades may also deflect damage from magical ranged attacks that target you.</description>
+		</sheet>
+	</element>
+
+	<element name="Sceptre of the Deceptre (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_SCEPTRE_OF_THE_DECEPTRE">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>While in possession of this relic, you gain proficiency in Deception checks. This once golden sceptre was used by a man pretending to be a King. It's said that despite briefly managing to rule a kingdom, he was quickly overthrown.</p>
+		</description>
+		<sheet alt="Sceptre of the Deceptre">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
+	</element>
+
+	<element name="Scythe Master's Gloves (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_SCYTHE_MASTERS_GLOVES">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>Rail Mail Relic</prerequisite>
+		<requirements>ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_RAIL_MAIL</requirements>
+		<description>
+			<p><em>2 Relic Points, Rail Mail Relic</em></p>
+			<p>Gloves made for expert scythe work, you now have full control while riding a scythe and may stop it early without a saving throw. As part of your movement you may spend 1 Ichor to make a leaping spin attack. This spin attack trick deals 1d10 + your Dexterity modifier to enemies in 5 foot radius of your spin attack landing. Upon completing this maneuver you automatically dismount.</p>
+		</description>
+		<sheet alt="Scythe Master's Gloves">
+			<description>You now have full control while riding a scythe and may stop it early without a saving throw. As part of your movement you may spend 1 Ichor to make a leaping spin attack. This spin attack trick deals 1d10 + {{dexterity:modifier}} to enemies in 5 ft radius of your spin attack landing. Upon completing this maneuver you automatically dismount.</description>
+		</sheet>
+	</element>
+
+	<element name="Sentry's Skull (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_SENTRYS_SKULL">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>9th level</prerequisite>
+		<requirements>[level:9]</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level</em></p>
+			<p>Spend 3 Ichor Points to at-will summon a skeleton to attack for you. It lasts for 4 hours. You may cast this ability twice per long rest.</p>
+		</description>
+		<sheet alt="Sentry's Skull" usage="2/Long Rest">
+			<description>Spend 3 Ichor Points to at-will summon a skeleton to attack for you. It lasts for 4 hours.</description>
+		</sheet>
+	</element>
+
+	<element name="Shield Strap of the Marksman (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_SHIELD_STRAP_OF_THE_MARKSMAN">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>9th level, Code of Aegis</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_AEGIS</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level, Code of Aegis</em></p>
+			<p>Your Aegis Marksman ability hits one additional target.</p>
+		</description>
+		<sheet alt="Shield Strap of the Marksman">
+			<description>Your Aegis Marksman ability hits one additional target.</description>
+		</sheet>
+	</element>
+
+	<element name="Shovellier's Weighted Pommel (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_RUNIC_SPADE_HOLSTER">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>9th level, Code of Shovelry</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_SHOVELRY</requirements>
+		<description>
+			<p><em>2 Relic Points, 11th level, Code of Shovelry</em></p>
+			<p>You can more accurately aim your Shovel Drops. You may include your Dex Modifier when rolling for damage on all Shovel Drop attacks.</p>
+		</description>
+		<sheet alt="Shovellier's Weighted Pommel">
+			<description>You can more accurately aim your Shovel Drops. You may add {{dexterity:modifier}} when rolling for damage on all Shovel Drop attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Stoic Boots of the Shield Sentinel (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_STOIC_BOOTS_OF_THE_SHIELD_SENTINEL">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>9th level, Code of Aegis</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_AEGIS</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level, Code of Aegis</em></p>
+			<p>Your base movement speed drops by 10 feet. While holding a shield or buckler, these boots increase your AC by 3.</p>
+		</description>
+		<sheet alt="Stoic Boots of the Shield Sentinel">
+			<description>While holding a shield or buckler, your AC increases by 3.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="-10" />
+		</rules>
+	</element>
+
+	<element name="The Bomb Bag (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_BOMB_BAG">
+		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<prerequisite>9th level, Code of the Adventurer</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
+			<p>A small bag of bombs that mysteriously refills each morning. As an attack action you can throw a handful of them. Each creature in a 20-foot-radius centered on a point within 120 feet must make a Dexterity saving throw. A creature takes 6d6 fire damage on a failed save, or half as much damage on a successful one. You may use this bag a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Bomb Bag" action="Action" usage="{{relic:bomb:usage}}/Day">
+			<description>You can throw bombs. Each creature in a 20-ft radius centered on a point within 120 ft must make a Dexterity saving throw. A creature takes 6d6 fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:bomb:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:bomb:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="The Dread Talon (3 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_DREAD_TALON">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>8th level</prerequisite>
+		<requirements>[level:8]</requirements>
+		<description>
+			<p><em>3 Relic Points, 8th level</em></p>
+			<p>Expend your movement and action this turn as you focus all of your energy on one incredible strike. Spend 3 Ichor and wait one turn to make an attack roll (including proficiency and either your Strength or Dexterity modifier) with the Talon that deals 6d10 force damage on a hit. Being hit with an attack during the charge up time imposes disadvantage, and taking additional damage cancels the attack. You may spend 2 additional Ichor to avoid incurring penalties from taking damage.</p>
+		</description>
+		<sheet alt="The Dread Talon" action="Action and Movement">
+			<description>Spend 3 Ichor and wait one turn to make an attack roll (+{{relic:talon:attack}}) with the Talon that deals 6d10 force on a hit. Being hit with an attack during the charge up time imposes disadvantage, and taking additional damage cancels the attack. You may spend 2 Ichor to avoid penalties from taking damage.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:talon:attack" value="proficiency" />
+			<stat name="relic:talon:attack" value="dexterity:modifier" bonus="bonus" />
+			<stat name="relic:talon:attack" value="strength:modifier" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="The Eye of True Sight (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_EYE_OF_TRUE_SIGHT">
+		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<prerequisite>9th level, Code of the Adventurer</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
+			<p>You gain proficiency on Wisdom Checks (Perception) that rely on sight. You are also able to see through magical darkness as if it was daylight. As a bonus action you may also reveal the Hit Points of one weakness of a target. You may use the bonus action ability a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Eye of True Sight" usage="{{relic:eye:usage}}/Day">
+			<description>You are proficienct with Perception checks that rely on sight. You can also see through magical darkness as if it was daylight. As a bonus action, you may also reveal the hp of one weakness of a target.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:eye:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:eye:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="The Grapple Anchor (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_GRAPPLE_ANCHOR">
+		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<prerequisite>9th level, Code of the Adventurer</prerequisite>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<description>
+			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
+			<p>A metallic gauntlet with an anchor protruding from its end. As an action you may target an opponent within 20 feet and attempt to grapple them. On a success, you may draw the target towards you, or keep them in place, imposing disadvantage on Dexterity Saving Throws. The target may spend its action to attempt to break hold of the grapple. You may use The Grapple Anchor a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Grapple Anchor" action="Action" usage="{{relic:grapple:usage}}/Day">
+			<description>You may target an opponent within 20 feet and attempt to grapple them. On a success, you may draw the target towards you, or keep them in place, imposing disadvantage on Dexterity saving throws. The target may spend its action to attempt to break hold of the grapple.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:grapple:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:grapple:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+
+	<element name="The Necromancer's Shackles (4 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_NECROMANCERS_SHACKLES">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>11th level, Code of Torment</prerequisite>
+		<requirements>[level:11],ID_YCG_SKSS_ARCHETYPE_KNIGHT_TORMENT</requirements>
+		<description>
+			<p><em>4 Relic Points, 11th level, Code of Torment</em></p>
+			<p>A pair of pitch black shackles. They weigh nothing when worn and are silent to all but the wearer. When you strike the killing blow on an enemy, you may summon an allied Skeleton. The skeleton lasts 24 hours or until it is dropped to 0 hit points. You may spend 1 Ichor to double the time limit, making it last for 48 hours.</p>
+		</description>
+		<sheet alt="The Necromancer's Shackles">
+			<description>When you strike the killing blow on an enemy, you may summon an allied Skeleton. The skeleton lasts 24 hours or until it is dropped to 0 hp. You may spend 1 Ichor to double the time limit.</description>
+		</sheet>
+	</element>
+
+	<element name="The Pen of Sword's Might (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_PEN_OF_SWORDS_MIGHT">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You learn the skills of combatative penmanship with this enchanted quill. Once per day you may use this as a throwing weapon. Make a ranged attack with it, adding proficiency. On a hit, deal 1d8 + Dex piercing damage and impose disadvantage on their next attack roll.</p>
+		</description>
+		<sheet alt="The Pen of Sword's Might" usage="1/Day">
+			<description>You may use this as a throwing weapon. Make a ranged attack with it (Attack Modifier: {{proficiency}}). On a hit, deal 1d8 + {{dexterity:modifier}} piercing and impose disadvantage on their next attack roll.</description>
+		</sheet>
+	</element>
+
+	<element name="The Sword of Pen's Might (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_SWORD_OF_PENS_MIGHT">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You learn the art of strongly sworded penmanship. You gain proficiency in Charisma(Persuasion) checks involving writing while carrying this relic.</p>
+		</description>
+		<sheet alt="The Sword of Pen's Might">
+			<description>You gain proficiency in Charisma (Persuasion) checks involving writing.</description>
+		</sheet>
+	</element>
+
+	<element name="The Terrible Rake of Torment (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_TERRIBLE_RAKE_OF_TORMENT">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>12th level</prerequisite>
+		<requirements>[level:12]</requirements>
+		<description>
+			<p><em>2 Relic Points, 12th level</em></p>
+			<p>This seemingly mundane rake has a dark enchantment cast upon on. By spending one minute or spending 2 Ichor and a bonus action, you may place the rake down on an area within 35 feet. It immediately vanishes from sight. Any creature (including you) must succeed on a DC 18 Perception check to spot the rake. A medium or smaller creature who passes through the rake's location must succeed on a DC 12 Dexterity Saving Throw or lose their Movement action and take 4 (1d4+2) bludgeoning damage as they're hit in the face with a rake. You may only use this once per short rest.</p>
+		</description>
+		<sheet alt="The Terrible Rake of Torment" action="Bonus Action" usage="1/Short Rest">
+			<description>By spending one minute or spending 2 Ichor, you may place the rake down on an area within 35 ft. It immediately vanishes from sight. Any creature (including you) must succeed on a DC 18 Perception check to spot the rake. A medium or smaller creature who passes through the rake's location must succeed on a DC 12 Dexterity saving throw or lose their Movement action and take 4 (1d4+2) bludgeoning.</description>
+		</sheet>
+	</element>
+
+	<element name="Throwing Anchor (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THROWING_ANCHOR">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>2 Relic Points</em></p>
+			<p>You may spend 2 Ichor Points to do the following: As a reaction when you hit a creature with a weapon attack, a small chained anchor appears at the point of impact, and the target must succeed on a Strength saving throw against your Ichor Save DC or be restrained by the magical chains until the end of their next turn. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the chains shatter.</p>
+			<p class="indent">A creature restrained by the chains or one that can touch the creature can use its action to make a Strength check against your Ichor save DC. On a success, the target is freed. This ability may only effect one creature at any given time.</p>
+		</description>
+		<sheet alt="Throwing Anchor" action="Reaction">
+			<description>When you hit a creature with a weapon attack and spend 2 ichor, a small chained anchor appears at the point of impact, and the target must succeed on a Strength saving throw (DC:{{ichor:dc}}) or be restrained by the magical chains until the end of their next turn. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the chains shatter.
+			A creature restrained by the chains or one that can touch the creature can use its action to make a Strength check (DC:{{ichor:dc}}). On a success, the target is freed. This ability may only effect one creature at any given time.</description>
+		</sheet>
+	</element>
+
+	<element name="Tome of Tedium (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_TOME_OF_TEDIUM">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You gain proficiency in the History skill with this ancient tome full of historical factoids that would put anyone to sleep.</p>
+		</description>
+		<sheet alt="Tome of Tedium">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+
+	<element name="Trenchstone (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_TRENCHSTONE">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>7th level</prerequisite>
+		<requirements>[level:7]</requirements>
+		<description>
+			<p><em>2 Relic Points, 7th level</em></p>
+			<p>You may take 10 minutes and spend 3 Ichor Points to sharpen your Weapon of Devotion and imbue it with ancient Ichor. For the purposes of resistances and immunities, your weapon is now considered to be magical. This enchantment ends after 24 hours.</p>
+		</description>
+		<sheet alt="Trenchstone">
+			<description>You may take 10 minutes and spend 3 Ichor Points to sharpen your Weapon of Devotion. For the purposes of resistances and immunities, your weapon is considered magical. This enchantment ends after 24 hours.</description>
+		</sheet>
+	</element>
+
+	<element name="Troupple Chalice (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_TROUPPLE_CHALICE">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>Code of Shovelry</prerequisite>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_KNIGHT_SHOVELRY</requirements>
+		<description>
+			<p><em>1 Relic Point, Code of Shovelry</em></p>
+			<p>This cup once belonged to a king beneath the waves. It smells faintly of apples. This Relic grants the user a single charge of the Create or Destroy Water spell per day.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
+			</div>
+		</description>
+		<sheet alt="Troupple Chalice" usage="1/Day">
+			<description>You can cast create or destroy water.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
+		</rules>
+	</element>
+
+	<element name="Usurper's Crown (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_USURPERS_CROWN">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>This crown of badness allows you to make decrees to subject across the land! When you speak, you are understood in any language but do not necessarily understand all other languages.</p>
+		</description>
+		<sheet alt="Usurper's Crown">
+			<description>You are understood in any language, but you do not understand all other languages.</description>
+		</sheet>
+	</element>
+
+	<element name="War Horn (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_WAR_HORN">
+		<supports>Knight Relic SnS</supports>
+		<description>
+			<p><em>1 Relic Point</em></p>
+			<p>You may spend 2 Ichor points to use this device as an action. Each creature in a 15 foot cone in front of you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage. On a successful save, the creature takes half as much damage. Spending an additional Ichor point increases the damage by an additional 1d8.</p>
+		</description>
+		<sheet alt="War Horn" action="Action">
+			<description>You may spend 2 ichor points to make each creature in a 15 foot cone in front of you from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder. On a successful save, the creature takes half as much damage. Spending an additional Ichor point increases the damage by an additional 1d8.</description>
+		</sheet>
+	</element>
+
+	<element name="Wrist Gauntlet of Far Throwing (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_WRIST_GAUNTLET_OF_FAR_THROWING">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>11th level, Code of Aegis</prerequisite>
+		<requirements>[level:11],ID_YCG_SKSS_ARCHETYPE_KNIGHT_AEGIS</requirements>
+		<description>
+			<p><em>2 Relic Points, 11th level, Code of Aegis</em></p>
+			<p>This mechanical device was used by ancient shield throwers to increase their effective range. When throwing a shield, your range increases by 40 feet.</p>
+		</description>
+		<sheet alt="Wrist Gauntlet of Far Throwing">
+			<description>When throwing a shield, your range increases by 40 feet.</description>
+		</sheet>
+	</element>
+
+	<element name="Wristbands of Digging (1 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_TERRIBLE_RAKE_OF_TORMENT">
+		<supports>Knight Relic SnS</supports>
+		<prerequisite>15th level</prerequisite>
+		<requirements>[level:15]</requirements>
+		<description>
+			<p><em>1 Relic Point, 15th level</em></p>
+			<p>When you attempt to dig through dirt in any direction, you may add your proficiency bonus to the skill check.</p>
+		</description>
+		<sheet alt="Wristbands of Digging">
+			<description>When you attempt to dig through dirt in any direction, you may add {{proficiency}} to the skill check.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Knight from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="class-knight.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/class-knight.xml" />
+		</update>
+	</info>
+
+	<element name="Knight" type="Class" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_KNIGHT">
+		<description>
+			<p>Long have tales been told of brave knights that wander the earth in search of riches and glory. Whether they wield an arsenal of arcane items or a modest shovel, these brave warriors wielded legendary weapons and relics against foe, undead, and dragon alike. From the shield guardian to the strangely shovel'd champion, these knights hope to make a name for themselves.</p>
+			<h4>ADVENTURES AT HEART</h4>
+			<p>At the dawn of the new age, when the wilds were still untamed, the lands were roamed by knights. To this day, they are often found in the wilderness or deep in the heart of dungeons, looking for their next big adventure with seldom a worry for their own safety. A forest full of monsters and longforgotten temples is but another location for them to plunder, and add to their growing legend.</p>
+			<p class="indent">Knights are a breed of adventurer unmatched in their unwavering loyalty to their cause. Similar to a paladin's devotion to spreading the good of a deity, a knight is born for adventure and glory. Often found with an arsenal of gadgetry at their side, these dungeon delvers won't rest in their pursuit of unending discovery. Despite their appearance, they rarely wear armor that is truly heavy, knowing that balancing movement and sturdiness is important.</p>
+			<h4>BECOMING A KNIGHT</h4>
+			<p>Knights of this class are not simply ordained by Royalty, but are driven by higher purpose. Recognized by their strength and deeds from town to town and spoken of in title more than in name. Their hopeful spirit keeps them sprinting into the heat of battle, whether to defend allies, or meet foes. While some are made for the battle of words, knights often shine in dextrous physical combat, and are rarely skilled with the arcane. With the sacred magic of Ichor, some are imbued with powers that awaken artifacts at their disposal or expand their own abilities.</p>
+			<p class="indent">When deciding to play as a knight, think about what sort of legend your knight seeks. Are they questing to find a holy relic for a kingdom in peril? Perhaps saving their beloved from a wicked enchantment? Or could they be hoping to garner a collection of similarly powerful adventurers, and establish their own order of knights? It's important to establish a purpose for a knight as it can be central to the theme of the character.</p>
+			<h4>GLORY AND PURPOSE EVERLASTING</h4>
+			<p>Knights are often full of conviction but vary in all other traits: Many have a strong sense of honor and justice; others are errant, greedy, or troubled. Knighthood is a calling not suited to the weak of heart and great tragedy has befallen those who have refused the call, or abandoned it when things became bleak. Though not holy in their magical origin, knights may be a beacon of hope for the weak. A symbol of purpose for the lost. And a shovel for those in need of a shovel. I'm not one to judge.</p>
+			<h4>CREATING A KNIGHT</h4>
+			<p>When designing a knight, try to take an object, concept or theme and associated it with the word "Knight". For example, an undead character who once served a powerful count and is now cursed to stalk the shadows until the day they're laid to rest might be known as Endless Knight. Were they given their title by a king? Maybe they're known simply as the Royal Knight? Perhaps it's Goblin Knight? Roaming the lands in search of that most foul creature that burdens the good folk of the land. The Flower Knight may be known for a dandelion attached to their breastplate at all times. Finally, should they complete their quest, will they return to the world they once knew, or seek out new adventures in the wider world?</p>
+			<h5 class="caption">QUICK BUILD</h5>
+			<p>You can establish a Knight quickly by following these suggestions. First, put your highest ability score into Dexterity, as most knights have learned quickly that a heavy knight is only as safe as they are quick. Your next highest ability should be Wisdom in order to empower relics and secondary abilities. Then, choose the Code of Shovelry. Finally, take the Retired Adventurer background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a Knight, you gain the following class features. Additional features will be granted by your subclass.</p>
+			<h5 class="caption">HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d10 per Knight level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d10 (or 7) + your Constitution modifier per Knight level after 1st</li>
+			</ul>
+			<h5 class="caption">PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Shields, Light armor, Medium armor</li>
+				<li><strong>Weapons:</strong> None</li>
+				<li><strong>Tools:</strong> Blacksmith's Tools, Gaming Set (Joustus)</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Strength, Dexterity</li>
+				<li><strong>Skills:</strong> Choose one from Athletics, Acrobatics, Investigation, Nature, Survival</li>
+			</ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a martial weapon, (b) one simple weapon, or (c) one buckler</li>
+				<li>(a) Leather Armor or (b) Chain Mail</li>
+				<li>A dungeoneer's pack</li>
+			</ul>
+			<h5 class="caption">THE KNIGHT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Ichor</td><td class="col-10">Relics</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td>1st</td><td>—</td><td>—</td><td class="left">Code Of Honor</td></tr>
+				<tr><td>2nd</td><td>2</td><td>1</td><td class="left">Ichor Bottle, Relic Keeper</td></tr>
+				<tr><td>3rd</td><td>2</td><td>2</td><td class="left">Knight's Code Feature</td></tr>
+				<tr><td>4th</td><td>4</td><td>2</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td>4</td><td>3</td><td class="left">Hopeful Soul</td></tr>
+				<tr><td>6th</td><td>6</td><td>3</td><td class="left">Knight's Code Feature</td></tr>
+				<tr><td>7th</td><td>6</td><td>4</td><td class="left">Campfire Craftsman</td></tr>
+				<tr><td>8th</td><td>8</td><td>4</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td>8</td><td>5</td><td class="left">Unwavering Spirit</td></tr>
+				<tr><td>10th</td><td>10</td><td>5</td><td class="left">—</td></tr>
+				<tr><td>11th</td><td>10</td><td>6</td><td class="left">Knight's Code Feature</td></tr>
+				<tr><td>12th</td><td>12</td><td>6</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>12</td><td>7</td><td class="left">—</td></tr>
+				<tr><td>14th</td><td>14</td><td>7</td><td class="left">Treasure Tracker</td></tr>
+				<tr><td>15th</td><td>14</td><td>8</td><td class="left">Knight's Code Feature</td></tr>
+				<tr><td>16th</td><td>16</td><td>8</td><td class="left">—</td></tr>
+				<tr><td>17th</td><td>16</td><td>9</td><td class="left">Knight's Code Feature</td></tr>
+				<tr><td>18th</td><td>18</td><td>9</td><td class="left">—</td></tr>
+				<tr><td>19th</td><td>18</td><td>10</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>20</td><td>10</td><td class="left">Legend of the Realm</td></tr>
+			</table>				
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CODE_OF_HONOR" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ICHOR_BOTTLE" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_KEEPER" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ITEMS_OF_ICHOR" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_HOPEFUL_SOUL" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CAMPFIRE_CRAFTSMAN" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_UNWAVERING_SPIRIT" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_TREASURE_TRACKER" />
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_LEGEND_OF_THE_REALM" />
+		</description>
+		<sheet display="false">
+			<description>An adventurer born for glory, who follows their code and uses many gadgets and relics.</description>
+		</sheet>
+		<setters>
+			<set name="short">An adventurer born for glory, who follows their code and uses many gadgets and relics.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<select type="Proficiency" name="Skill Proficiency (Knight)" supports="SnS Knight Skill" requirements="!ID_YCG_SSKS_MULTICLASS_KNIGHT" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CODE_OF_HONOR" level="1" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR" level="2" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ICHOR_BOTTLE" level="2" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_KEEPER" level="2" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ITEMS_OF_ICHOR" level="2" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_HOPEFUL_SOUL" level="5" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CAMPFIRE_CRAFTSMAN" level="7" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_UNWAVERING_SPIRIT" level="9" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_TREASURE_TRACKER" level="14" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_LEGEND_OF_THE_REALM" level="20" />
+		</rules>
+		<multiclass id="ID_YCG_SSKS_MULTICLASS_KNIGHT">
+			<prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+			<requirements>([dex:13],[wis:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">All proficiencies garnered by chosen Code.</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			</rules>
+		</multiclass>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_ATHLETICS">
+		<supports>SnS Knight Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_ACROBATICS">
+		<supports>SnS Knight Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_INVESTIGATION">
+		<supports>SnS Knight Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_NATURE">
+		<supports>SnS Knight Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_SURVIVAL">
+		<supports>SnS Knight Skill</supports>
+	</append>
+
+	<element name="Code of Honor" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CODE_OF_HONOR">
+		<description>
+			<p>Every knight knows what they will and won't do and for whom their allegiance remains steadfast. They study ancient traditions and techniques in order to better themselves and prepare for dungeon-delving.</p>
+			<p class="indent">Choosing a Code is a meaningful choice. Though many Relics are attainable for every kind of Knight, some Codes grant access to strange and powerful Relics that bolster their prowess.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Code of Honor" supports="Knight Code of Honor SnS" />
+		</rules>
+	</element>
+	
+	<element name="Benefactor" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR">
+		<description>
+			<p>While every knight is competent in their own right, it is always nice to know someone has your back. Much like how knights of old belonged to ancient orders that provided them with tools, your benefactor is a patron of your adventures, and regularly provides you with Relics that empower you and your weapons. Consider who or what is supplying you with rare treasures. They each provide one bonus skill, tool, or language proficiency.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Benefactor" supports="Knight Benefactor SnS" />
+		</rules>
+	</element>
+
+	<element name="Ichor Bottle" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ICHOR_BOTTLE">
+		<description>
+			<p>At 2nd level, Knights are granted the secrets of ancient treasure magic. They recieve an Ichor Bottle with 2 Ichor points, which increases in quantity as listed in the Knight table. When you spend an Ichor point, it is unavailable until you finish a short or long rest. You must spend at least one hour of the rest replenishing your Ichor Bottle in order to regain your Ichor Points.</p>
+			<p class="indent">Some of your abilities will require your target to make a saving throw to resist effects. The Saving Throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Ichor save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You have an ichor bottle with {{ichor:points}} Ichor Points and your Ichor DC is {{ichor:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ichor:points" value="2" bonus="base" />
+			<stat name="ichor:points" value="4" bonus="base" level="4" />
+			<stat name="ichor:points" value="6" bonus="base" level="6" />
+			<stat name="ichor:points" value="8" bonus="base" level="8" />
+			<stat name="ichor:points" value="10" bonus="base" level="10" />
+			<stat name="ichor:points" value="12" bonus="base" level="12" />
+			<stat name="ichor:points" value="14" bonus="base" level="14" />
+			<stat name="ichor:points" value="16" bonus="base" level="16" />
+			<stat name="ichor:points" value="18" bonus="base" level="18" />
+			<stat name="ichor:points" value="20" bonus="base" level="20" />
+			<stat name="ichor:dc" value="8" />
+			<stat name="ichor:dc" value="proficiency" />
+			<stat name="ichor:dc" value="wisdom:modifier" />
+		</rules>
+	</element>
+
+	<element name="Relic Keeper" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_KEEPER">
+		<description>
+			<p>Relics are ancient treasure empowered with a liquid known as Ichor that flows through the wielder. Starting at 2nd level, you gain the favor of a shop owner, patron, or powerful being known as a benefactor. While your benefactor can be wildly different to fit your knight's story, we've assembled a few of them for your convenience.</p>
+			<p class="indent">As you gain levels, you can borrow relics equal to the Relic Column of the Knights table from this benefactor. Upon reaching subsequent levels or completing a long rest, you may change out any or all of your relics for new ones, on the condition that you have the points to account for all relics in your possession.</p>
+			<p class="indent">You may only use one Relic per round but may receive the benefit of multiple relics at once unless otherwise noted.</p>
+			<div element="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELICS_OF_ADVENTURE" />
+		</description>
+		<sheet>
+			<description>You have {{relics:max}} relics. You may change out any or all of your relics after completing a long rest.
+			You may only use one Relic per round but may receive the benefit of multiple relics at once unless otherwise noted.
+			Relics require a bottle of ichor. If you lose your bottle of Ichor you must spend 24 hours crafting a new one. Finding an appropriate smith or alchemist may reduce the time needed.
+			Your spellcasting modifier is +{{knight:relic:attack}} (Wisdom).</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ITEMS_OF_ICHOR" level="2" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELICS_OF_ADVENTURE" level="2" />
+			
+			<select type="Class Feature" name="Relic (Level 2)" supports="Knight Relic SnS" level="2" />
+			<select type="Class Feature" name="Relic (Level 3)" supports="Knight Relic SnS" level="3" />
+			<select type="Class Feature" name="Relic (Level 5)" supports="Knight Relic SnS" level="5" />
+			<select type="Class Feature" name="Relic (Level 7)" supports="Knight Relic SnS" level="7" />
+			<select type="Class Feature" name="Relic (Level 9)" supports="Knight Relic SnS" level="9" />
+			<select type="Class Feature" name="Relic (Level 11)" supports="Knight Relic SnS" level="11" />
+			<select type="Class Feature" name="Relic (Level 13)" supports="Knight Relic SnS" level="13" />
+			<select type="Class Feature" name="Relic (Level 15)" supports="Knight Relic SnS" level="15" />
+			<select type="Class Feature" name="Relic (Level 17)" supports="Knight Relic SnS" level="17" />
+			<select type="Class Feature" name="Relic (Level 19)" supports="Knight Relic SnS" level="19" />
+			
+			<stat name="relics:max" value="1" level="2" />
+			<stat name="relics:max" value="1" level="3" />
+			<stat name="relics:max" value="1" level="5" />
+			<stat name="relics:max" value="1" level="7" />
+			<stat name="relics:max" value="1" level="9" />
+			<stat name="relics:max" value="1" level="11" />
+			<stat name="relics:max" value="1" level="13" />
+			<stat name="relics:max" value="1" level="15" />
+			<stat name="relics:max" value="1" level="17" />
+			<stat name="relics:max" value="1" level="19" />
+		</rules>
+	</element>
+
+	<element name="Relics of Adventure" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELICS_OF_ADVENTURE">
+		<description>
+			<p>If a Relic has prerequisites (listed in italics), you must meet them in order to obtain it. You can obtain any Relic at the same time as meeting its requirement. You may choose to exchange Relics during a long rest but lost any bonus incurred by their affects as a result.</p>
+			<p class="indent">Wisdom is your spellcasting ability for Relics. If a Relic requires an attack to be made, the attack bonus is calculated as follows:</p>
+			<center>
+				<p><strong>Relic Attack Bonus</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<p class="indent">You may only use one Relic per round but may receive the benefit of multiple Relics at once unless otherwise noted.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="knight:relic:attack" value="proficiency" />
+			<stat name="knight:relic:attack" value="wisdom:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Items of Ichor" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ITEMS_OF_ICHOR">
+		<description>
+			<p>Unlike typical magical items, Relics are ancient devices that must be powered by Ichor, and cannot be used by those without a bottle of Ichor. If you lose your bottle of Ichor you must spend 24 hours crafting a new one. Finding an appropriate smith or alchemist may reduce the time needed.</p>
+			<p class="indent">While Relics may be powered by Ichor, so are your Weapons of Devotion. Some of your weapons may also require Ichor to reach their full potential in combat.</p>
+			<div class="sidebar">
+				<h5>WEAPONS OF DEVOTION</h5>
+				<p>In future sections of this class, the term may be used and will always refer to the main weapon of your chosen class. For example, The Code of Shovelry's Weapon of Devotion is the Shovel Blade.</p>
+				<p class="indent">Knights who lose their Weapons of Devotion have grown accustomed to improvising new weapons and may spend 8 hours with Blacksmith's Tools in order to recraft a basic version of their Weapon of Devotion. For example, a longsword being crafted into a Shovel Blade</p>
+			</div>
+		</description>
+		<sheet display="false">
+			<description>Relics require a bottle of ichor. If you lose your bottle of Ichor you must spend 24 hours crafting a new one. Finding an appropriate smith or alchemist may reduce the time needed.</description>
+		</sheet>
+	</element>
+
+	<element name="Ability Score Improvement" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_ABILITY_SCORE_IMPROVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th, 8th, 12th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Knight,4" level="4" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Knight,8" level="8" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Knight,12" level="12" />
+			<select type="Class Feature" name="Ability Score Improvement" supports="Improvement Option,Knight,19" level="19" />
+		</rules>
+	</element>
+
+	<element name="Hopeful Soul" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_HOPEFUL_SOUL">
+		<description>
+			<p>At 5th level, when faced with hardship, you can steel your soul to stay in the fight. On your turn, you can use your Bonus Action to regain Hit Points equal to 1d8 + your Knight level.</p>
+			<p class="indent">Once you use this feature, you must finish a Short or Long Rest before you can use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can regain hp equal to 1d8 + {{level}}</description>
+		</sheet>
+	</element>
+
+	<element name="Campfire Craftsman" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_CAMPFIRE_CRAFTSMAN">
+		<description>
+			<p>At 7th Level, when taking a Short Rest, you can attempt to create a comforting campfire. On a success you and your allies heal an additional amount equal to 1d6 + your Relic score in Hit Points. Attempting this during a long rest grants temporary Hit Points equal to 1d4 + your Relic score.</p>
+		</description>
+		<sheet>
+			<description>When you take a long rest, you can attempt to create a campfire. On a success, you and your allies heal an additional amount equal to 1d6 + {{relics:max}}.
+			Attempting this during a long rest grants temporary hp equal to 1d4 + {{relics:max}}.</description>
+		</sheet>
+	</element>
+
+	<element name="Unwavering Spirit" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_UNWAVERING_SPIRIT">
+		<description>
+			<p>Upon reaching 9th level, a wealth of experience has strengthened your resolve against the creatures of the dark. You are immune to the Frightened condition, regardless of its source.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the Frightened condition, regardless of its source.</description>
+		</sheet>
+	</element>
+
+	<element name="Treasure Tracker" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_TREASURE_TRACKER">
+		<description>
+			<p>When you reach 14th Level, your benefactor grants you a Relic to reward your continued efforts, <i>The Ring Of Treasure Sight</i>. This shimmering ring grants advantage on checks related to finding hidden treasure and incurs disadvantage on Mimics attempting to hide in plain sight.</p>
+			<p class="indent">Also, once per day you may cast the Identify spell without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on checks related to finding hidden treasure. You give disadvantage to Mimics attempting to hide in plain sight.
+			You can cast the identify spell once a day without spending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Legend of the Realm" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_LEGEND_OF_THE_REALM">
+		<description>
+			<p>Upon reaching 20th Level, you have garnered experience that rivals that of any adventurer. Your base movement speed doubles. Your Dexterity score increases by 4. The maximum for this score is now 24.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="4" />
+			<stat name="dexterity:max" value="4" />
+			<stat name="doublespeed" value="speed" />
+			<stat name="speed" value="doublespeed" />
+		</rules>
+	</element>
+</elements>

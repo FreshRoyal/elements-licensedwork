@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Code of Aegis from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="knight-aegis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-aegis.xml" />
+		</update>
+	</info>
+	
+	<element name="Code of Aegis" type="Archetype" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_KNIGHT_AEGIS">
+		<supports>Knight Code of Honor SnS</supports>
+		<description>
+			<p>They say the best offense is a good defense, and for followers of the Code of Aegis, this couldn't be more true. Your experience as an adventurer revolves around the shield.</p>
+			<h5>Shield Bash</h5>
+			<table>
+				<thead>
+					<tr><td>Level</td><td>Damage</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1st</td><td>1d4</td></tr>
+					<tr><td>6th</td><td>1d6</td></tr>
+					<tr><td>15th</td><td>1d8</td></tr>
+					<tr><td>17th</td><td>1d10</td></tr>
+				</tbody>
+			</table>
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_EXPERTISE" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_STRIKER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_AEGIS_MARKSMAN" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_RISING_STAR" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_ANSWER_THE_CALL" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_COURAGEOUS_SPIRIT" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_INDIRECT_ROUTE" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_THE_DEFENDER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_SAVANT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_EXPERTISE" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_STRIKER" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_AEGIS_MARKSMAN" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_RISING_STAR" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_ANSWER_THE_CALL" level="6" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_COURAGEOUS_SPIRIT" level="11" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_INDIRECT_ROUTE" level="11" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_THE_DEFENDER" level="15" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_SAVANT" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Shield Expertise" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_EXPERTISE">
+		<description>
+			<p>You are proficient in wielding two bucklers or a shield with the Two-Handed property. While holding a shield/buckler in your main hand, you gain the following benefits:</p>
+			<ul>
+				<li>Your shield is considered a finesse weapon that you have proficiency in.</li>
+				<li>You can roll a 1d4 in place of the normal damage of an unarmed strike. This die changes as you gain knight levels, as shown in the Shield Bash table.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>While holding a shield/buckler in your main hand, you gain the following benefits:
+			• Your shield is considered a finesse weapon that you have proficiency in.
+			• You can roll a 1d{{shield:bash:dice size}} in place of the normal damage of an unarmed strike.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_ARMOR_PROFICIENCY_BUCKLER" />
+			<stat name="shield:bash:dice size" value="4" bonus="base" />
+			<stat name="shield:bash:dice size" value="6" bonus="base" level="6" />
+			<stat name="shield:bash:dice size" value="8" bonus="base" level="15" />
+			<stat name="shield:bash:dice size" value="10" bonus="base" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Shield Striker" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_STRIKER">
+		<description>
+			<p>When making an attack against an opponent with your shield you may spend 1 Ichor to make them perform a Dexterity saving throw. On a failure, choose from the following options:</p>
+			<ul>
+				<li>The target is knocked back 10 feet.</li>
+				<li>The target is knocked to the left or right of their original position 5 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When making an attack against an opponent with your shield you may spend 1 Ichor to make them perform a Dexterity saving throw. On a failure, choose from the following:
+			• The target is knocked back 10 ft.
+			• The target is knocked to the left or right 5 ft.</description>
+		</sheet>
+	</element>
+	
+	<element name="Aegis Marksman" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_AEGIS_MARKSMAN">
+		<description>
+			<p>Starting at 3rd Level, when wielding a shield you can choose to throw it. Make a ranged attack with your shield within 30 feet. On a successful hit, deal 1d6 bludgeoning damage. For the duration of its flight, you lose any AC bonus granted by the shield. At the end of your turn, your shield returns to your hand.</p>
+		</description>
+		<sheet>
+			<description>When wielding a shield you can choose to throw it. Make a ranged attack with your shield within 30 ft. On a successful hit, it deals 1d6 bludgeoning. For the duration of its flight, you lose any AC bonus granted by the shield. At the end of your turn, your shield returns to your hand.</description>
+			<description level="17">When wielding a shield you can choose to throw it. Make a ranged attack with your shield within 30 ft. On a successful hit, it deals 1d6 bludgeoning. At the end of your turn, your shield returns to your hand.</description>
+		</sheet>
+	</element>
+
+	<element name="Rising Star" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_RISING_STAR">
+		<description>
+			<p>At 3rd Level, you've become confident in using your shield as a temporary platform for allies. As a bonus action you can position your shield above your head for allies to step on. Allies may spend part of their movement to reach your shield, counting your space as difficult terrain.</p>
+			<p class="indent">Allies who use your shield as a platform gain an extra 1d6 attack bonus and add half your Dex modifier (rounded down) to their damage bonus on attacks made until they touch the ground again.</p>
+			<p class="indent">Your shield loses half of its AC score (rounded down) while you hold this position. Starting next round you may lower your shield again as a free action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can position your shield above your head for allies to step on. Allies may spend part of their movement to reach your shield, counting your space as difficult terrain. Allies who use your shield as a platform gain an extra 1d6 attack bonus and add {{dexterity:modifier:half}} to their damage bonus on attacks made until they touch the ground again. Your shield loses half of its AC while you hold this position. Starting next round, you may lower your shield again as a free action.</description>
+			<description level="17">You can position your shield above your head for allies to step on. Allies may spend part of their movement to reach your shield, counting your space as difficult terrain. Allies who use your shield as a platform gain an extra 1d6 attack bonus and add {{dexterity:modifier:half}} to their damage bonus on attacks made until they touch the ground again. Starting next round, you may lower your shield again as a free action.</description>
+		</sheet>
+	</element>
+
+	<element name="Answer the Call" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_ANSWER_THE_CALL">
+		<description>
+			<p>At 6th Level, you learn that no ally should fight alone. When spending your movement to reach a friendly creature, you do so without provoking opportunity attacks.</p>
+		</description>
+		<sheet>
+			<description>When spending your movement to reach a friendly creature, you do so without provoking opportunity attacks.</description>
+		</sheet>
+	</element>
+	
+	<element name="Courageous Spirit" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_COURAGEOUS_SPIRIT">
+		<description>
+			<p>At 11th Level, your bravery inspires those around you. Allies in a 10 foot radius receive advantage on checks made against spells or abilities that cause the Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>Allies in a 10 ft radius receive advantage on checks made against spells or abilities that cause the Frightened condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Indirect Route" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_INDIRECT_ROUTE">
+		<description>
+			<p>At 11th Level you have gained a powerful mastery of your shield's flight. You can now throw your shield towards a point of your choosing within 30 feet and hold it there until the beginning of your next turn (no concentration needed). Allies may use this shield as a platform to incur the benefits recieved by Rising Star. You lose the AC bonus granted by the shield during its flight.</p>
+		</description>
+		<sheet>
+			<description>You can now throw your shield towards a point of your choosing within 30 ft and hold it there until the beginning of your next turn. Allies may use this shield as a platform to incur the benefits recieved by Rising Star. You lose the AC bonus granted by the shield during its flight.</description>
+		</sheet>
+	</element>
+
+	<element name="The Defender" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_THE_DEFENDER">
+		<description>
+			<p>At 15th Level, you face foes head on and keep those closest to you safe from harm. When wielding a shield, enemies in a 10 foot radius of you and an ally of your choosing incur disadvantage on one attack per round.</p>
+		</description>
+		<sheet>
+			<description>When wielding a shield, enemies in a 10 ft radius of you and an ally of your choosing incur disadvantage on one attack per round.</description>
+		</sheet>
+	</element>
+
+	<element name="Shield Savant" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_AEGIS_SHIELD_SAVANT">
+		<description>
+			<p>At 17th Level, you've grown powerfully proficient with your shield, granting you double proficiency bonus on attacks or saves that involve your shield. You also ignore AC penalties incurred from Rising Star and Aegis Marksman.</p>
+		</description>
+		<sheet>
+			<description>You have double proficiency bonus on attacks or saves that involve your shield.</description>
+		</sheet>
+	</element>
+	
+</elements>

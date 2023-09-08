@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Code of the Adventurer from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="knight-adventurer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-adventurer.xml" />
+		</update>
+	</info>
+	
+	<element name="Code of the Adventurer" type="Archetype" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER">
+		<supports>Knight Code of Honor SnS</supports>
+		<description>
+			<p>Your heroism is unmatched in the face of danger. With honed skill you're able to bring out the best of your weapon, with a small arsenal to keep your options open when you need them most. As a knight your bond is to your cause, and you will go the distance to achieve your goals.</p>
+			<p class="indent">You gain an additional relic at level 1, 6 and 15, and you gain 2 additional relics at level 17.</p>
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_SPEED_RUNNER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_HONING_YOUR_CRAFT" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_TREASURE_HUNTER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_CRAFTY_COMBATANT" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_ICHOR_INVIGORATED" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPONS_MASTER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_SPEED_RUNNER" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_HONING_YOUR_CRAFT" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_TREASURE_HUNTER" level="6" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_CRAFTY_COMBATANT" level="6" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK" level="11" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_ICHOR_INVIGORATED" level="15" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPONS_MASTER" level="17" />
+			<select type="Class Feature" name="Relic (Level 1, Adventurer)" supports="Knight Relic SnS" level="1" />
+			<select type="Class Feature" name="Relic (Level 6, Adventurer)" supports="Knight Relic SnS" level="6" />
+			<select type="Class Feature" name="Relic (Level 15, Adventurer)" supports="Knight Relic SnS" level="15" />
+			<select type="Class Feature" name="Relic (Level 17, Adventurer)" supports="Knight Relic SnS" number="2" level="17" />
+		</rules>
+	</element>
+
+	<!--Weapon Devotion-->
+	<element name="Weapon Devotion" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION">
+		<description>
+			<p>You have studied an ancient art devoted to the weapon of your Code. Decide what this weapon is. You are now proficient with it.</p>
+			<p class="indent">Choose which type of damage it deals from the following list: Slashing, Piercing, Bludgeoning.</p>
+			<p class="indent">The weapon's properties are determined by one of the following:</p>
+			<h5>Devoted Weapon Table</h5>
+			<table>
+				<thead>
+					<tr><td>Weapon</td><td>Damage</td><td>Weight</td><td>Properties</td></tr>
+				</thead>
+				<tr><td>Melee</td><td>1d8</td><td>4 lb.</td><td>Finesse</td></tr>
+				<tr><td>Ranged</td><td>1d6</td><td>10 lb.</td><td>Ammunition(range 30/100), Loading</td></tr>
+			</table>
+			<h5>WEAPONS OF DEVOTION</h5>
+				<p>Bug Knight: You use the Insect Launcher ranged weapon, with an ammo type of "beetle blades". At 9th level, choose the Light property.</p>
+				<p>Chain-Blade Knight: You use the Chain-Blade melee weapon. At 9th level, choose the Reach property.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Devoted Weapon" supports="Adventurer Devoted Weapon SnS" />
+		</rules>
+	</element>
+	<element name="Melee Weapon" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE">
+		<supports>Adventurer Devoted Weapon SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Weapon Devotion">
+			<description>Your Devoted Weapon is melee. It has the finesse property. Your attack modifier is +{{devoted:melee:attack}}. It deals 1d8 + {{devoted:melee:damage}} {{devoted:damage:type}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_MELEE" />
+			<stat name="devoted:melee:attack" value="proficiency" />
+			<stat name="devoted:melee:attack" value="dexterity:modifier" bonus="bonus" />
+			<stat name="devoted:melee:attack" value="strength:modifier" bonus="bonus" />
+			<stat name="devoted:melee:damage" value="proficiency" />
+			<stat name="devoted:melee:damage" value="dexterity:modifier" bonus="bonus" />
+			<stat name="devoted:melee:damage" value="strength:modifier" bonus="bonus" />
+			<select type="Archetype Feature" name="Devoted Weapon Damage Type" supports="Adventurer Devoted Weapon Damage SnS" />
+		</rules>
+	</element>
+	<element name="Ranged Weapon" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED">
+		<supports>Adventurer Devoted Weapon SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Weapon Devotion">
+			<description>Your Devoted Weapon is ranged. It has the loading property. Its range is {{devoted:range:normal}}/{{devoted:range:long}}. Your attack modifier is +{{devoted:ranged:attack}}. It deals 1d{{devoted:ranged:dice size}} + {{devoted:ranged:damage}} {{devoted:damage:type}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_RANGED" />
+			<stat name="devoted:ranged:attack" value="proficiency" />
+			<stat name="devoted:ranged:attack" value="dexterity:modifier" bonus="bonus" />
+			<stat name="devoted:ranged:damage" value="proficiency" />
+			<stat name="devoted:ranged:damage" value="dexterity:modifier" bonus="bonus" />
+			<stat name="devoted:ranged:dice size" value="6" bonus="base" />
+			<stat name="devoted:range:normal" value="30" bonus="base" />
+			<stat name="devoted:range:long" value="100" bonus="base" />
+			<select type="Archetype Feature" name="Devoted Weapon Damage Type" supports="Adventurer Devoted Weapon Damage SnS" />
+		</rules>
+	</element>
+	<element name="Slashing" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_SLASHING">
+		<supports>Adventurer Devoted Weapon Damage SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="devoted:damage:type" value="slashing"/>
+		</rules>
+	</element>
+	<element name="Piercing" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_PIERCING">
+		<supports>Adventurer Devoted Weapon Damage SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="devoted:damage:type" value="piercing"/>
+		</rules>
+	</element>
+	<element name="Bludgeoning" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_BLUDGEONING">
+		<supports>Adventurer Devoted Weapon Damage SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat inline="true" name="devoted:damage:type" value="bludgeoning"/>
+		</rules>
+	</element>
+
+	<element name="Speed Runner" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_SPEED_RUNNER">
+		<description>
+			<p>When it comes to finding optimal routes, you're a cut above the rest. At 3rd Level, your base movement increases by 10 feet.</p>
+			<p class="indent">Also, when jumping you may use your Dexterity Modifier instead of your Strength Modifier.</p>
+		</description>
+		<sheet>
+			<description>When jumping you may use your Dexterity modifier instead of your Strength modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="10" />
+		</rules>
+	</element>
+
+	<element name="Honing Your Craft" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_HONING_YOUR_CRAFT">
+		<description>
+			<p>At 3rd Level, you find comfort in the weapon you rely on. Your Weapon of Devotion gains the following properties based on its chosen type.</p>
+			<ul>
+				<li>Ranged Weapon: You gain a +1 bonus to attack rolls made with this weapon.</li>
+				<li>Melee Weapon: You gain a +1 bonus to attack and damage rolls made with this weapon.</li>
+			</ul>
+			<p class="indent">You may also choose one of the following additional properties for your Weapon of Devotion.</p>
+			<h5>Bonus Properties</h5>
+			<table>
+				<thead>
+					<tr><td>Type</td><td>Upgrades</td></tr>
+				</thead>
+				<tr><td>Melee</td><td>Versatile (1d10), Light, Reach, Thrown (range 20/60)</td></tr>
+				<tr><td>Ranged</td><td>Light, Remove Loading property, Damage Increase (1d8), Remove Ammunition property, Range Increase (+10 feet)</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="devoted:ranged:attack" value="1" requirements="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED" level="3" />
+			<stat name="devoted:melee:attack" value="1" requirements="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE" level="3" />
+			<stat name="devoted:melee:damage" value="1" requirements="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE" level="3" />
+			<select type="Archetype Feature" name="Devoted Weapon Bonus Property" supports="Adventurer Devoted Weapon Bonus Property SnS" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Treasure Hunter" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_TREASURE_HUNTER">
+		<description>
+			<p>At 6th Level, you've begun to collect rare Relics that have never been seen before. You gain one of the following Relics from the Relic List for free: The Eye of True Sight, The Grapple Anchor, The Bomb Bag.</p>
+			<p class="indent">Alternatively, you may gain a second copy of your Weapon of Devotion weapon.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Relic (Level 6, Treasure Hunter)" supports="Adventurer Treasure Relic SnS" level="6" />
+		</rules>
+	</element>
+
+	<element name="Crafty Combatant" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_CRAFTY_COMBATANT">
+		<description>
+			<p>Upon reaching 6th Level, When you use your action to use a relic, you may use a second relic so long as it uses a bonus action.</p>
+		</description>
+		<sheet>
+			<description>When you use your action to use a relic, you may use a second relic so long as it uses a bonus action.</description>
+		</sheet>
+	</element>
+
+	<!--Multiattack-->
+	<element name="Multiattack" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK">
+		<description>
+			<p>At 11th level choose one of the following features:</p>
+			<p class="indent"><strong><em>Rapid Fire.</em></strong> You can use your action and spend 1 Ichor to make a ranged attack against a number of creatures equal to your Wisdom Modifier within 10 feet of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
+			<p class="indent"><strong><em>Spinning Strike.</em></strong> You can use your action and spend 2 Ichor to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target. On a hit, the targets take an additional 1d6 force damage as your strike is empowered by the mythical force of Ichor. </p>
+			<p class="indent"><strong><em>Vigorous Stance.</em></strong> You may spend an Ichor and use your reaction to an incoming attack to your AC by +3 for the remainder of the round. You must complete a short rest before using this ability again.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Devoted Weapon Multiattack" supports="Adventurer Devoted Weapon Multiattack SnS" />
+		</rules>
+	</element>
+	<element name="Rapid Fire" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK_RAPID_FIRE">
+		<supports>Adventurer Devoted Weapon Multiattack SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Multiattack, Rapid Fire" action="Action">
+			<description>You can spend 1 Ichor to make a ranged attack against {{wisdom:modifier}} creatures within 10 ft of a point you can see within your weapon's range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
+		</sheet>
+	</element>
+	<element name="Spinning Strike" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK_SPINNING_STRIKE">
+		<supports>Adventurer Devoted Weapon Multiattack SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Multiattack, Spinning Strike" action="Action">
+			<description>You can spend 2 Ichor to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target. On a hit the targets take an additional 1d6 force.</description>
+		</sheet>
+	</element>
+	<element name="Vigorous Stance" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_MULTIATTACK_VIGOROUS_STANCE">
+		<supports>Adventurer Devoted Weapon Multiattack SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Multiattack, Vigorous Stance" action="Action" usage="1/Short Rest">
+			<description>You may spend 1 Ichor and use your reaction to an incoming attack to your AC by +3 for the remainder of the round.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ichor Invigorated" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_ICHOR_INVIGORATED">
+		<description>
+			<p>At 15th Level, you know how to overcharge your weapons with Ichor. As a bonus action, you may spend 3 Ichor. On your next attack within 10 minutes, add a +5 to your attack roll and an extra 3d6 force damage.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You may spend 3 Ichor. On your next attack within 10 minutes, add a +5 to your attack roll and an extra 3d6 force.</description>
+		</sheet>
+	</element>
+
+	<element name="Weapons Master" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPONS_MASTER">
+		<description>
+			<p>At 17th Level, you gain another Relic from the Treasure Hunter list and may add an additional property to your Weapon of Devotion.</p>
+		</description>
+		<sheet>
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Relic (Level 17, Weapons Master)" supports="Adventurer Treasure Relic SnS" level="17" />
+			<select type="Archetype Feature" name="Devoted Weapon Bonus Property" supports="Adventurer Devoted Weapon Bonus Property SnS" level="17" />
+		</rules>
+	</element>
+
+	<!--Devoted Weapon Bonus Properties-->
+
+	<element name="Versatile" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_VERSATILE">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Versatile">
+			<description>Your Devoted Weapon has the versatile property (1d10).</description>
+		</sheet>
+	</element>
+
+	<element name="Light" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_LIGHT">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Light">
+			<description>Your Devoted Weapon has the light property.</description>
+		</sheet>
+	</element>
+
+	<element name="Reach" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_REACH">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Reach">
+			<description>Your Devoted Weapon has the reach property.</description>
+		</sheet>
+	</element>
+
+	<element name="Thrown" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_THROWN">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_MELEE</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Thrown">
+			<description>Your Devoted Weapon has the thrown property (20/60).</description>
+		</sheet>
+	</element>
+
+	<element name="Remove Loading Property" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_REMOVE_LOADING">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Remove Loading">
+			<description>Your Devoted Weapon no longer has the loading property.</description>
+		</sheet>
+	</element>
+
+	<element name="Damage Increase" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_DAMAGE_INCREASE">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Damage Increase">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="devoted:ranged:dice size" value="8" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Remove Ammunition Property" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_REMOVE_AMMUNITION">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Remove Ammunition">
+			<description>Your Devoted Weapon no longer has the ammunition property.</description>
+		</sheet>
+	</element>
+
+	<element name="Range Increase" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_BONUS_PROPERTY_RANGE_INCREASE">
+		<supports>Adventurer Devoted Weapon Bonus Property SnS</supports>
+		<requirements>ID_YCG_SKSS_ARCHETYPE_FEATURE_ADVENTURER_WEAPON_DEVOTION_RANGED</requirements>
+		<compendium display="false"/>
+		<description>
+			<p></p>
+		</description>
+		<sheet alt="Devoted Weapon, Range Increase">
+			<description></description>
+		</sheet>
+		<rules>
+			<stat name="devoted:range:normal" value="10" />
+			<stat name="devoted:range:long" value="10" />
+		</rules>
+	</element>
+	
+</elements>

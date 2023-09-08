@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Benefactors from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="benefactors.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/benefactors.xml" />
+		</update>
+	</info>
+	
+	<!--The Bard-->
+	<element name="The Bard" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_THE_BARD">
+		<supports>Knight Benefactor SnS</supports>
+		<description>
+			<p>This wandering minstrel found their company among yours during your travels and has offered to aid you in your quest for glory. While they lack the power to go off on fantastic adventures, they see benefit in supplying you with Relics in their own quest to write sonnets about warriors of legend.</p>
+			<p class="indent">Curiously, you always find them wearing a knight's helmet but have yet to discover why. The Bard is a being of Good will and tends to gravitate towards Good aligned folk.</p>
+			<ul class="unstyled">
+				<li><strong>Bonus Proficiency:</strong> Choose one: Acrobatics, Performance, one Musical Instrument of your choice.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your benefactor is The Bard.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill/Musical Instrument Proficiency (Benefactor, The Bard)" supports="SnS Benefactor Bard Skill||Musical Instrument" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_ACROBATICS">
+		<supports>SnS Benefactor Bard Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_PERFORMANCE">
+		<supports>SnS Benefactor Bard Skill</supports>
+	</append>
+
+	<!--Mom-->
+	<element name="Mom" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_MOM">
+		<supports>Knight Benefactor SnS</supports>
+		<description>
+			<p>Some adventurers never stray too far from home. Perhaps your benefactor is a former adventurer in your family, or another relative. Through thick and thin, its good to know your family will always have your back. Considering your relationship, Mom will always see the best in you, even if your alignment is evil.</p>
+			<ul class="unstyled">
+				<li><strong>Bonus Proficiency:</strong> Choose one: Persuasion, Medicine, Inisght, or one Artisan's Tool Proficiency of your choosing.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your benefactor is your mom.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill/Tool Proficiency (Benefactor, Mom)" supports="SnS Benefactor Mom Skill||Artisan tools" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_PERSUASION">
+		<supports>SnS Benefactor Mom Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_MEDICINE">
+		<supports>SnS Benefactor Mom Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_INSIGHT">
+		<supports>SnS Benefactor Mom Skill</supports>
+	</append>
+
+	<!--Troupple King-->
+	<element name="Troupple King" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_TROUPPLE_KING">
+		<supports>Knight Benefactor SnS</supports>
+		<description>
+			<p>The leader of the Troupples who thinks himself a god amongst men (and fish). Those who seek out his guidance may find him. He seems to be unfettered by alignment.</p>
+			<p class="indent">It is said that his spit is the source of all Ichor. But that can't be true, right?</p>
+			<ul class="unstyled">
+				<li><strong>Bonus Proficiency:</strong> Choose one: Acrobatics, Athletics, Language (Aquan).</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your benefactor is the Troupple King.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Bonus Proficiency (Benefactor, Troupple King)" supports="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_TROUPPLE_KING_SKILL_PROFICIENCY|ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_TROUPPLE_KING_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Skill Proficiency" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_TROUPPLE_KING_SKILL_PROFICIENCY">
+		<compendium display="false" />
+		<description>
+			<p>You gain a proficiency of your choice of either acrobatics or athletics.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Benefactor, Troupple King)" supports="SnS Benefactor Troupple King Skill" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_ACROBATICS">
+		<supports>SnS Benefactor Troupple King Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_ATHLETICS">
+		<supports>SnS Benefactor Troupple King Skill</supports>
+	</append>
+	<element name="Language, Aquan" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_TROUPPLE_KING_LANGUAGE">
+		<compendium display="false" />
+		<description>
+			<p>You gain Aquan as a bonus language.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+		</rules>
+	</element>
+
+	<!--The Enchantress-->
+	<element name="The Enchantress" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_THE_ENCHANTRESS">
+		<supports>Knight Benefactor SnS</supports>
+		<description>
+			<p>This mysterious sorceress wields powerful and evil magic that enables her control over a small legion of followers. Perhaps you've caught her eye, and as such are granted Relics as your strength grows. Whatever plans she has for you are unclear. You're only certain that someday, her good will may end. As a powerful and evil sorceress, she tends to patron those of the Evil alignment.</p>
+			<ul class="unstyled">
+				<li><strong>Bonus Proficiency:</strong> Choose one: Acrobatics, Survival, Arcana</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your benefactor is The Enchantress.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Benefactor, The Enchantress)" supports="SnS Benefactor Enchantress Skill" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_ACROBATICS">
+		<supports>SnS Benefactor Enchantress Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_SURVIVAL">
+		<supports>SnS Benefactor Enchantress Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_ARCANA">
+		<supports>SnS Benefactor Enchantress Skill</supports>
+	</append>
+
+	<!--Chester-->
+	<element name="Chester" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_BENEFACTOR_CHESTER">
+		<supports>Knight Benefactor SnS</supports>
+		<description>
+			<p>This shopkeeper seems to be passionate about Relics and often tries to find them for resale. Thankfully, he's taken a liking to you and has offered you his collection to help advertise his wares and aid your adventures. Chester seems to prefer folk who fall in the Lawful alignment and won't impose on his good-will.</p>
+			<ul class="unstyled">
+				<li><strong>Bonus Proficiency:</strong> Choose one: Acrobatics, Survival, Thieves' Tools, or Jeweler's Tools</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your benefactor is Chester.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Benefactor, Chester)" supports="SnS Benefactor Chester Skill" />
+		</rules>
+	</element>
+	<append id="ID_PROFICIENCY_SKILL_ACROBATICS">
+		<supports>SnS Benefactor Chester Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_SKILL_SURVIVAL">
+		<supports>SnS Benefactor Chester Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS">
+		<supports>SnS Benefactor Chester Skill</supports>
+	</append>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS">
+		<supports>SnS Benefactor Chester Skill</supports>
+	</append>
+</elements>

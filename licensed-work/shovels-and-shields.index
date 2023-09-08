@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Shovel Knight - Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="shovels-and-shields.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/source.xml" />
+		<file name="relics.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/relics.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/items.xml" />
+		<file name="class-knight.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/class-knight.xml" />
+		<file name="benefactors.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/benefactors.xml" />
+		<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/backgrounds.xml" />
+		<file name="knight-adventurer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-adventurer.xml" />
+		<file name="knight-aegis.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-aegis.xml" />
+		<file name="knight-shovelry.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-shovelry.xml" />
+		<file name="knight-torment.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-torment.xml" />
+	</files>
+</index>

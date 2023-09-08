@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Code of Shovelry from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="knight-shovelry.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-shovelry.xml" />
+		</update>
+	</info>
+	
+	<element name="Code of Shovelry" type="Archetype" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_KNIGHT_SHOVELRY">
+		<supports>Knight Code of Honor SnS</supports>
+		<description>
+			<p>Long have you sworn off traditional weaponry in pursuit of the elegant art of shovel work. While some find joy in hacking away at monsters with a sword, you have dedicated yourself to making the most of a tool that uplifted the foundation of civilization: A shovel. While you may adapt to situations with the help of your many relics, when all else fails, your spade is what you can truly depend on.</p>
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVELIER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_UPROOTING_STRIKE" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_DROP" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_WARRIOR" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_RETURNED_IN_SPADES" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_DUNGEON_DESTROYER" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_EARTH_SHATTERING_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVELIER" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_UPROOTING_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_DROP" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_WARRIOR" level="6" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_RETURNED_IN_SPADES" level="11" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_DUNGEON_DESTROYER" level="15" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_EARTH_SHATTERING_STRIKE" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Shovelier" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVELIER">
+		<description>
+			<p>When you choose this Code at 1st Level, you are proficient with Shovel Blades. If you spend 8 hours with smith's tools, you can reshape any longsword into a Shovel Blade. With magical longswords taking twice as long or more. The Shovel Blade has the stats of a longsword, as well as the Finesse property.</p>
+			<p class="indent">You also gain the Fishfellow's Scale for free when you choose this Code. It does not count towards your relic total.</p>
+		</description>
+		<sheet>
+			<description>You forge a Shovel Blade.  If you spend 8 hours with smith's tools, you can reshape any longsword into a Shovel Blade. With magical longswords taking twice as long or more.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL_BLADE" />
+			<grant type="Class Feature" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_FISHFELLOWS_SCALE" />
+		</rules>
+	</element>
+	
+	<element name="Uprooting Strike" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_UPROOTING_STRIKE">
+		<description>
+			<p>As a bonus action at 3rd Level, you may spend 1 Ichor to attempt to bury your shovel underneath a foe within 5 feet and flip them. Your target makes a Strength Saving Throw equal to your Ichor Save DC. On a failure they're knocked prone for your turn's duration. On a success, you have disadvantage against the target on your next attack this round.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You may spend 1 Ichor to attempt to bury your shovel underneath a foe within 5 feet and flip them. Your target makes a Strength saving throw (DC:{{ichor:dc}}). On a failure they're knocked prone for your turn's duration. On a success, you have disadvantage against the target on your next attack this round.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shovel Drop" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_DROP">
+		<description>
+			<p>At 3rd Level, you can use your action to attempt to shovel drop. Make a two-handed attack against a creature within 10 feet as you drop down onto it with your shovel. On a success, roll for damage as normal. You may make another attack against the same target or an adjacent target within 10 feet, up to three times. On a hit, you deal 1d8 + Dex piercing damage. You may choose to perform up to 2 additional shovel bounces. On each successive drop, you deal one die tier lower in damage (1d6, 1d4) without the Dex modifier. If you miss, you may spend 1 Ichor to heighten your senses and avoid falling prone, as you land within 5 feet of your target and lose your next bonus action. While traveling by Shovel Drop, you ignore difficult terrain. When you end this ability voluntarily, choose a space within 10 feet of your target to land.</p>
+			<p class="indent">Beginning at 8th level, the amount of times you can drop increases by one and the damage die starts at a 1d10 instead of a 1d8.</p>
+		</description>
+		<sheet action="Action">
+			<description>Make a two-handed attack against a creature within 10 feet as you drop down onto it with your shovel. On a success, roll for damage as normal. You may make another attack against the same target or an adjacent target within 10 ft, up to 3 times. On a hit, you deal 1d8 + {{dexterity:modifier}} piercing. You may choose to perform up to 2 additional shovel bounces. On each successive drop, you deal one die tier lower in damage without a modifier. If you miss, you may spend 1 Ichor to heighten your senses and avoid falling prone, as you land within 5 ft of your target and lose your next bonus action. While traveling by Shovel Drop, you ignore difficult terrain. When you end this ability voluntarily, choose a space within 10 feet of your target to land.</description>
+			<description level="8">Make a two-handed attack against a creature within 10 feet as you drop down onto it with your shovel. On a success, roll for damage as normal. You may make another attack against the same target or an adjacent target within 10 ft, up to 4 times. On a hit, you deal 1d10 + {{dexterity:modifier}} piercing. You may choose to perform up to 3 additional shovel bounces. On each successive drop, you deal one die tier lower in damage without a modifier. If you miss, you may spend 1 Ichor to heighten your senses and avoid falling prone, as you land within 5 ft of your target and lose your next bonus action. While traveling by Shovel Drop, you ignore difficult terrain. When you end this ability voluntarily, choose a space within 10 feet of your target to land.</description>
+		</sheet>
+	</element>
+
+	<element name="Shovel Warrior" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_SHOVEL_WARRIOR">
+		<description>
+			<p>Starting at 6th level your Shovel Blade gains a bonus +2 to attack rolls. This bonus increases to a +4 at 12th Level.</p>
+		</description>
+		<sheet>
+			<description>Your Shovel Blade gains a bonus +2 to attack rolls.</description>
+			<description level="12">Your Shovel Blade gains a bonus +4 to attack rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Returned in Spades" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_RETURNED_IN_SPADES">
+		<description>
+			<p>Starting at 11th level you can use your reaction to block a missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d8 + your Dexterity modifier + your Knight level.</p>
+			<p class="indent">If you reduce the damage to 0, and it is small enough to be held in one hand, you can reflect the missile by striking it with your shovel blade. You may then spend 1 Ichor point to make a ranged attack with the weapon or piece of ammunition you just deflected, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile does 1d6 + Dex, with a normal range of 20 feet and a long range of 60 feet.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can block a missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d8 + {{shovelry:spades:reduce}}. 
+			If you reduce the damage to 0, and the missle is small enough to be held in one hand, you can reflect the it by striking it with your Shovel Blade. You may then spend 1 Ichor point to make a ranged attack with the weapon or piece of ammunition you just deflected, as part of the same reaction.(To hit: +{{shovelry:spades:hit}}) The missile does 1d6 + {{dexterity:modifier}} (range:20/60).</description>
+		</sheet>
+		<rules>
+			<stat name="shovelry:spades:reduce" value="level" />
+			<stat name="shovelry:spades:reduce" value="dexterity:modifier" />
+			<stat name="shovelry:spades:hit" value="dexterity:modifier" />
+			<stat name="shovelry:spades:hit" value="proficiency" />
+		</rules>
+	</element>
+	
+	<element name="Dungeon Destroyer" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_DUNGEON_DESTROYER">
+		<description>
+			<p>Upon reaching 15th level, your devotion to shovelry grows. You gain a +1 bonus to attack and damage rolls while using your shovel, and each of your Shovel Drops deal an additional d6 force damage. In addition, you can use your Shovel Blade to burrow through natural rock at half your land speed.</p>
+		</description>
+		<sheet>
+			<description>You gain a +1 bonus to attack and damage rolls while using your Shovel Blade, and each of your Shovel Drops deal an additional d6 force. In addition, you can use your Shovel Blade to burrow at a speed of {{speed:half}} ft.</description>
+		</sheet>
+	</element>
+
+	<element name="Earth Shattering Strike" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_SHOVELRY_EARTH_SHATTERING_STRIKE">
+		<description>
+			<p>Starting at 17th level, once per day you may make a downward thrust against the earth. As an action, choose a location within 15 feet to leap to. Each creature in a 15-foot radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 10d10 force damage on a failed save, or half as much on a successful one. On a failure the creature is also knocked prone. The ground becomes difficult terrain or is destroyed as a result of this strike.</p>
+		</description>
+		<sheet action="Action" usage="1/Day">
+			<description>Choose a location within 15 ft to leap to. Each creature in a 15-ft radius sphere centered on each point you choose must make a Dexterity saving throw. The sphere spreads around corners. A creature takes 10d10 force on a failed save, or half as much on a successful one. On a failure the creature is also knocked prone. The ground becomes difficult terrain or is destroyed as a result of this strike.</description>
+		</sheet>
+	</element>
+	
+</elements>

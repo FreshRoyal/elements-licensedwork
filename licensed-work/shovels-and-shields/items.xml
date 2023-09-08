@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Items from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/items.xml" />
+		</update>
+	</info>
+	
+	<!--Joustus Set-->
+	<element name="Joustus Set" type="Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ITEM_TOOL_JOUSTUS_SET">
+		<description>
+			<p>If you are proficient with the Joustus Set, you can add your proficiency bonus to ability checks you make to play the game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_GAMING_SET_PROFICIENCY_JOUSTUS_SET</set>
+		</setters>
+	</element>
+	
+	<!--Weapons of Devotion-->
+	<element name="Scythe" type="Weapon" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_YCG_SKSS_WEAPON_GROUP_SCYTHE_WEAPON_OF_DEVOTION</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d4</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE</set>
+		</setters>
+	</element>
+	<element name="Weapon Group (Scythe, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_GROUP_SCYTHE_WEAPON_OF_DEVOTION" />
+
+	<element name="Buckler" type="Armor" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_GEAR_BUCKLER">
+		<supports>ID_YCG_SKSS_ARMOR_GROUP_BUCKLER_WEAPON_OF_DEVOTION, ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Shield</set>
+			<set name="armor">Shield</set>
+			<set name="armorClass">+1</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_ARMOR_PROFICIENCY_BUCKLER</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="1" bonus="shield" />
+		</rules>
+	</element>
+	<element name="Armor Group (Buckler, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARMOR_GROUP_BUCKLER_WEAPON_OF_DEVOTION" />
+	
+	<element name="Shovel Blade" type="Weapon" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_SHOVEL_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_WEAPON_OF_DEVOTION</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL_BLADE</set>
+		</setters>
+	</element>
+	<element name="Weapon Group (Shovel Blade, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_WEAPON_OF_DEVOTION" />
+
+	<element name="Shovel Blade, Heavy" type="Weapon" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_SHOVEL_BLADE_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_HEAVY_WEAPON_OF_DEVOTION</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">1d10</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL_BLADE</set>
+		</setters>
+	</element>
+	<element name="Weapon Group (Shovel Blade, Heavy, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_HEAVY_WEAPON_OF_DEVOTION" />
+
+	<element name="Devoted Weapon, Melee" type="Weapon" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_DEVOTED_WEAPON_MELEE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_YCG_SKSS_WEAPON_GROUP_DEVOTED_WEAPON_MELEE</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_MELEE</set>
+		</setters>
+	</element>
+	<element name="Weapon Group (Devoted Weapon, Melee, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_GROUP_DEVOTED_WEAPON_MELEE" />
+
+	<element name="Devoted Weapon, Ranged" type="Weapon" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_DEVOTED_WEAPON_RANGED">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_YCG_SKSS_WEAPON_GROUP_DEVOTED_WEAPON_RANGED</supports>
+		<description>
+			<p></p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_RANGED</set>
+		</setters>
+	</element>
+	<element name="Weapon Group (Devoted Weapon, Ranged, Weapon of Devotion)" type="Weapon Group" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_WEAPON_GROUP_DEVOTED_WEAPON_RANGED" />
+
+	<!--Magic Items-->
+	<element name="Shields of Aegon" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_SHIELDS_OF_AEGON">
+		<description>
+			<p>This legendary two-handed pair of shields were once wielded by a hero dedicated to their defenses. larger shield fits over your main hand and the smaller buckler over your off hand. When wielded together they confer a +3 bonus to your AC in lieu of +1 bonus offered by most bucklers.</p>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">twohand</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="type">Shield</set>
+			<set name="armorClass">+3</set>
+			<set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="3" bonus="shield" />
+		</rules>
+	</element>
+
+	<element name="Scythe of Spectres" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_SCYTHE_OF_SPECTRES">
+		<description>
+			<p>This two-handed Crimson Scythe is seething with Ichor. It deals 1d10 Necrotic (slashing) damage on a successful hit. When a creature is killed with this Scythe, the wielder gains 1d4+2 temporary hitpoints.</p>
+		</description>
+		<setters>
+			<set name="keywords">scythe, necrotic, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="scythe">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_YCG_SKSS_WEAPON_GROUP_SCYTHE_WEAPON_OF_DEVOTION</set>
+		</setters>
+	</element>
+
+	<element name="Shovel of the Blue Bouncer" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_SHOVEL_OF_THE_BLUE_BOUNCER">
+		<description>
+			<p>A relic of the Code of Shovelry, said to have been mundane when wielded by a knight most noble and just in ages long past. That hero's spirit has empowered this now ancient weapon. While wielding it, your Shovel Drops deal an additional 1d6 force damage and your movement speed cannot drop below 35 feet. You are also able to hold your breath indefinitely when submerged in water but it is entirely unclear how this is (if at all) related.</p>
+		</description>
+		<setters>
+			<set name="keywords">shovel blade</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shovel blade">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_WEAPON_OF_DEVOTION</set>
+		</setters>
+	</element>
+
+	<element name="Claws of Scorched Earth" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_CLAWS_OF_SCORCHED_EARTH">
+		<description>
+			<p>These fiery dirt-infused claws seem to radiate with energy from the depths of the earth. Your unarmed strikes now deal 1d8 slashing damage and 1d8 fire damage. When digging with these clawed gloves, you may move through earth and natural stone at your base movement speed. These claws are treated as a two-handed weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+	</element>
+
+	<element name="Polar Plow" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_POLAR_PLOW">
+		<description>
+			<p>This 2-handed shovel blade is Heavy and cannot be used for Shovel Drops. It deals 1d10 bludgeoning damage as well as 1d4 cold damage on a successful hit. As an action you may scoop and swing your Plow as an action to cast Snilloc's Snowball Swarm three times per day. While wielding this shovel blade your AC increases by 1 as it is large enough to cover your head.</p>
+		</description>
+		<setters>
+			<set name="keywords">shovel blade, cold, bludgeoning, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shovel blade">Weapon</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_HEAVY_WEAPON_OF_DEVOTION</set>
+		</setters>
+	</element>
+
+	<element name="The Shove-All Blade" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_SHOVE_ALL_BLADE">
+		<description>
+			<p>A shovel blade with a magical barrier infused in its springy hilt. You may spend your action to force any enemies within 10 feet to make a Strength Saving Throw against your Ichor Save DC or be pushed back 10 feet. Shovel Drops made with this incredible spade are done so with an additional 1d4 force damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">shovel blade, force, damage</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shovel blade">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="weapon">ID_YCG_SKSS_WEAPON_GROUP_SHOVEL_BLADE_WEAPON_OF_DEVOTION</set>
+		</setters>
+	</element>
+
+	<element name="Potion Satchel of the Alchemist" type="Magic Item" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_MAGIC_ITEM_POTION_SATCHEL_OF_THE_ALCHEMIST">
+		<description>
+			<p>This worn leather satchel contains an assortment of potions. Unfortunately, one of these potions is rigged to explode if any pesky adventurers is peeking through it. Roll 1d10 on the following table every time you look through the bag, drawing 2 (1d4) potions at random based on your result. When a result is drawn, its result is instead replaced with the Trap! result until you finish your next long rest as the bag seems to refill its capacity. Proficiency with Thieves' Tools or succeeding on a DC 15 Sleight of Hands proficiency check grants one re-roll.</p>
+			<table>
+				<thead>
+					<tr><td>d10</td><td>Potion</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td>Trap! The bag explodes and deals 1d8 fire damage to the holder. This item is destroyed as a result.</td></tr>
+					<tr><td>2</td><td>Potion of Greater Healing</td></tr>
+					<tr><td>3</td><td>Potion of Fire Breath</td></tr>
+					<tr><td>4</td><td>Potion of Growth</td></tr>
+					<tr><td>5</td><td>Potion of Poison. throwable (30/65) creatures in a 5 foot radius must succeed on a DC 15 Constitution Saving Throw or be poisoned for the next 10 minutes. They can reattempt the saving throw at the end of their round, using Medicine. Affected creatures take 2 (1d4) poison damage at the beginning of their turneach round.</td></tr>
+					<tr><td>6</td><td>Potion of Resistance</td></tr>
+					<tr><td>7</td><td>Potion of Water Breathing</td></tr>
+					<tr><td>8</td><td>Elixir of Electricity. throwable (30/65) creatures in a 5 foot radius must succeed on a DC 15 Dexterity Saving Throw or take 5 (2d6+1) lightning damage and be stunned until end of their next turn. On a success, creatures take half damage.</td></tr>
+					<tr><td>9</td><td>Potion of Heroism</td></tr>
+					<tr><td>10</td><td>	Potion of Hill Giant Strength</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	
+	<!--Proficiencies-->
+	<element name="Tool Proficiency (Joustus set)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_GAMING_SET_PROFICIENCY_JOUSTUS_SET">
+		<supports>Gaming Set</supports>
+		<requirements />
+		<description>
+			<p>
+			</p>
+		</description>
+		<rules />
+	</element>
+	<append id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_GAMING_SET">
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_GAMING_SET_PROFICIENCY_JOUSTUS_SET" />
+		</rules>
+	</append>
+	
+	<element name="Tool Proficiency (Fishing tools)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_TOOL_PROFICIENCY_FISHING_TOOLS">
+		<supports>Tool, Artisan tools</supports>
+		<requirements />
+		<description>
+			<p></p>
+		</description>
+		<rules />
+	</element>
+	<append id="ID_PROFICIENCY_TOOL_PROFICIENCY_ARTISANS_TOOLS">
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_TOOL_PROFICIENCY_FISHING_TOOLS" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (Scythe)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE">
+		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Armor Proficiency (Buckler)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_ARMOR_PROFICIENCY_BUCKLER">
+		<supports>Armor, ID_YCG_SKSS_ARMOR_GROUP_BUCKLER_WEAPON_OF_DEVOTION</supports>
+	</element>
+	
+	<element name="Weapon Proficiency (Shovel Blade)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SHOVEL_BLADE">
+		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Devoted Weapon, Melee)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_MELEE">
+		<supports>Weapon, Melee, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Devoted Weapon, Ranged)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_RANGED">
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION</supports>
+	</element>
+</elements>

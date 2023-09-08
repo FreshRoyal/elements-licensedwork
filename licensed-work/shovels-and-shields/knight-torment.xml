@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Code of Torment from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="knight-torment.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-torment.xml" />
+		</update>
+	</info>
+	
+	<element name="Code of Torment" type="Archetype" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_KNIGHT_TORMENT">
+		<supports>Knight Code of Honor SnS</supports>
+		<description>
+			<p>A strangely enchanted Knight imbued with Ichor. Not truly alive, not truly dead. Something in between.</p>
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_GRAVE_WEAPON" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_ICHOR_EMPOWERED" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_POISONED_MIND" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_DASH_SLASH" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UNDYING_SOUL" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UPHEAVING_SWING" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_EXPERT_MOVEMENT" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES" />
+			<div element="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_THE_REAPER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_GRAVE_WEAPON" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_ICHOR_EMPOWERED" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_POISONED_MIND" level="1" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_DASH_SLASH" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UNDYING_SOUL" level="3" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UPHEAVING_SWING" level="6" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_EXPERT_MOVEMENT" level="11" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES" level="15" />
+			<grant type="Archetype Feature" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_THE_REAPER" level="17" />
+		</rules>
+	</element>
+	
+	<element name="Grave Weapon" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_GRAVE_WEAPON">
+		<description>
+			<p>Starting when you choose this Code at 1st Level, you forge a scythe that empowers your enchanted abilities. You are proficient with scythes. The scythe has the stats of a regular scythe, as well as the Finesse property. By spending 8 hours you can recraft a new scythe.</p>
+		</description>
+		<sheet>
+			<description>You forge a scythe. It has all the stats of a normal scythe, but it has the finesse property. You can spend 8 hours crafting a new scythe.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_SCYTHE" />
+		</rules>
+	</element>
+	
+	<element name="Ichor Empowered" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_ICHOR_EMPOWERED">
+		<description>
+			<p>You may spend an amount of Ichor to add a bonus to your attack rolls or a number of d6 slashing to your damage rolls equal to the amount of Ichor spent. This must be declared before you make the attack roll.</p>
+		</description>
+		<sheet>
+			<description>You may spend an amount of Ichor to add a bonus to your attack rolls or a number of d6 slashing to your damage rolls equal to the amount of Ichor spent. This must be declared before you make the attack roll.</description>
+		</sheet>
+	</element>
+	
+	<element name="Poisoned Mind" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_POISONED_MIND">
+		<description>
+			<p>In order to heal from potions or safely consume food or drink, you must spend one minute corrupting them. Restoration spells still have a healing effect on you.</p>
+		</description>
+		<sheet>
+			<description>You may spend an amount of Ichor to add a bonus to your attack rolls or a number of d6 slashing to your damage rolls equal to the amount of Ichor spent. This must be declared before you make the attack roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Dash Slash" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_DASH_SLASH">
+		<description>
+			<p>At 3rd Level, as your action, choose a target creature within 15 feet and draw a line centered from you that extends five feet past the target. You fly past and through them to that location, making a melee attack against the target during your travel.</p>
+			<p class="indent">You may expend half your movement to adjust your landing an additional five feet. This ability cannot be used for making nor provoking opportunity attacks. You may use this ability while airborne or falling.</p>
+		</description>
+		<sheet action="Action">
+			<description>Choose a target creature within 15 feet and draw a line centered from you that extends five feet past the target. You fly past and through them to that location, making a melee attack against the target during your travel.
+			You may expend half your movement to adjust your landing an additional five feet. This ability cannot be used for provoking opportunity attacks. You may use this ability while airborne or falling.</description>
+		</sheet>
+	</element>
+
+	<element name="Undying Soul" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UNDYING_SOUL">
+		<description>
+			<p>At 3rd Level, your enchantment's grip on your soul heightens. On death, instead of dying outright you drop your trinket. If an allied creature picks up the trinket and completes a long rest within 24 hours, you are revived. If your trinket is destroyed, you are permanently destroyed. A willing creature can don the trinket and hear your voice.</p>
+			<p class="indent">If you lose the trinket, within 72 hours you will begin to decay and be permanently destroyed.</p>
+		</description>
+		<sheet>
+			<description>On death, instead of dying outright you drop your trinket. If an allied creature picks up the trinket and completes a long rest within 24 hours, you are revived. If your trinket is destroyed, you are permanently destroyed. A willing creature can don the trinket and hear your voice.
+			If you lose the trinket, within 72 hours you will begin to decay and be permanently destroyed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Upheaving Swing" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_UPHEAVING_SWING">
+		<description>
+			<p>At 6th Level, when taking your attack action against an opposing creature, you may spend 1 ichor to cause the target creature to make a Strength saving throw against your Ichor Save DC. If it fails, you impose the following:</p>
+			<ul>
+				<li>The target creature is launched 5 feet into the air until the start of their turn, during which they land on their feet as normal.</li>
+				<li>While in the air, attacks made against them are done so with advantage and cause a creature to fall prone on a success.</li>
+			</ul>
+			<p class="indent">You may spend an additional 1 Ichor to perform an extra attack using Dash Slash.</p>
+		</description>
+		<sheet>
+			<description>When taking your attack action against an opposing creature, you may spend 1 ichor to cause the target creature to make a Strength saving throw (DC:{{ichor:dc}}). If it fails, you impose the following:
+			• The target creature is launched 5 feet into the air until the start of their turn, during which they land on their feet as normal.
+			• While in the air, attacks made against them are done so with advantage and cause a creature to fall prone on a success.
+			 You may spend an additional 1 Ichor to perform an extra attack using Dash Slash.</description>
+		</sheet>
+	</element>
+
+	<element name="Expert Movement" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_EXPERT_MOVEMENT">
+		<description>
+			<p>At 11th level, you gain the ability to climb faster than normal; climbing no longer costs you additional movement.</p>
+			<p class="indent">In addition, you are now resistant to falling damage.</p>
+		</description>
+		<sheet>
+			<description>Climbing no longer costs you additional movement. You are now resistant to falling damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Between Planes" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES">
+		<description>
+			<p>At 15th level, you've grown comfortable with your new existence. After taking a long rest, choose one damage type from the following list, you have resistance to it for 8 hours: Fire, Lightning, Acid, Cold.</p>
+		</description>
+		<sheet>
+			<description>After taking a long rest, you can choose the following damage type to be resistant to: fire, lightning, acid, cold.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Damage Resistance, Between Planes" supports="Between Planes Resistance SnS" level="15" />
+		</rules>
+	</element>
+	<element name="Fire" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES_FIRE">
+		<supports>Between Planes Resistance SnS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain fire resistance.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES_LIGHTNING">
+		<supports>Between Planes Resistance SnS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain lightning resistance.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	<element name="Acid" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES_ACID">
+		<supports>Between Planes Resistance SnS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain acid resistance.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	<element name="Cold" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_BETWEEN_PLANES_COLD">
+		<supports>Between Planes Resistance SnS</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain cold resistance.</p>
+		</description>
+		<sheet display="false">
+			<description></description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+
+	<element name="The Reaper" type="Archetype Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_ARCHETYPE_FEATURE_TORMENT_THE_REAPER">
+		<description>
+			<p>At 17th Level, on your turn you may spend your movement to throw your scythe in a direction of your choosing within 120 feet and line of sight. As part of this action you may choose to teleport to your scythe and perform a melee attack. If you lose your scythe, you may use a bonus action to return it to your hand, so long as it is on the same plane of existence as you.</p>
+		</description>
+		<sheet>
+			<description>You may spend your movement to throw your scythe in a direction of your choosing within 120 ft and line of sight. As part of this action you may choose to teleport to your scythe and perform a melee attack. If you lose your scythe, you may use a bonus action to return it to your hand, so long as it is on the same plane as you.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Backgrounds from Shovels and Shields</name>
+		<update version="0.0.1">
+			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/backgrounds.xml" />
+		</update>
+	</info>
+	
+	<!--Order of No Quarter-->
+	<element name="Order of No Quarter" type="Background" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_ORDER_OF_NO_QUARTER">
+		<description>
+			<p>The Order of No Quarter is a villainous group of knights created by the Enchantress for her nefarious purposes. In addition to their individual skills in combat, each knight has a specific role in the Order, and loyal minions under their personal employ. You found yourself among their rank for a time, and perhaps you still ally yourself with them.</p>
+			<p class="indent">Ask yourself what brought you to the Order? Who are the other members? Do you share a true common goal, or is it an alliance of convenience?</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Intimidation, Athletics</li>
+				<li><strong>Tool Proficiencies:</strong>Thieves' Tools</li>
+				<li><strong>Equipment:</strong> Thieve's tools, a stolen belt pouch containing 35gp, and a wanted poster with your name on it.</li>
+			</ul>
+			<div element="ID_YCG_SKSS_BACKGROUND_FEATURE_NOTORIOUS_VILLAIN" />
+		</description>
+		<setters>
+			<set name="short">Intimidation, Athletics, Thieves' Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_YCG_SKSS_BACKGROUND_FEATURE_NOTORIOUS_VILLAIN" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Notorious Villain" type="Background Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_FEATURE_NOTORIOUS_VILLAIN">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p>
+		</description>
+		<sheet alt="Notorious Villain" />
+	</element>
+
+	<!--Retired Adventurer-->
+	<element name="Retired Adventurer" type="Background" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_RETIRED_ADVENTURER">
+		<description>
+			<p>In your prime you were a great adventurer. After years of inactivity, the call to Adventure causes you raise arms once again in hopes of restoring the world back to its proper place.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Insight, History</li>
+				<li><strong>Tool Proficiencies:</strong> Fishing Tools</li>
+				<li><strong>Equipment:</strong> Fishing tackle, a set of traveler's clothes, a bedroll, a small lockbox containing 10gp, a keepsake of a loved one, and 3 days worth of rations.</li>
+			</ul>
+			<div element="ID_YCG_SKSS_BACKGROUND_FEATURE_DREAMS_OF_MORROW" />
+		</description>
+		<setters>
+			<set name="short">Insight, History, Fishing Tools</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_TOOL_PROFICIENCY_FISHING_TOOLS" />
+			<grant type="Background Feature" id="ID_YCG_SKSS_BACKGROUND_FEATURE_DREAMS_OF_MORROW" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Dreams of Morrow" type="Background Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_FEATURE_DREAMS_OF_MORROW">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You often dream about your goals and may have premonitions about the future. When you sleep your dreams will be numerous. These dreams will fill you with the strength needed to face the new day. You can find comfort even on the bare earth as long as the warmth of a campfire brings you solace.</p>
+		</description>
+		<sheet alt="Dreams of Morrow" />
+	</element>
+
+	<!--Disgraced Traitor-->
+	<element name="Disgraced Traitor" type="Background" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_DISGRACED_TRAITOR">
+		<description>
+			<p>Some folks would rather their past be forgotten. Whether it be selling out your village for a payday, running out on family, or even leaving someone to certain doom, a shadow of regret hangs over your head. You often find yourself looking at mementos, wishing you could undo all the wrong you put into this world.</p>
+			<p class="indent">Ask yourself what heinous deed you did? How do you seek to undo it? And when you do, will you set your eyes on some new goal?</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Deception, Persuasion</li>
+				<li><strong>Tool Proficiencies:</strong> Disguise Kit</li>
+				<li><strong>Equipment:</strong> A set of commoner's clothes, a disguise kit, a bedroll, a belt containing 25gp, a painful memento that reminds you of your past, and 5 days worth of rations.</li>
+			</ul>
+			<div element="ID_YCG_SKSS_BACKGROUND_FEATURE_NIGHTMARES_OF_YESTERYEAR" />
+		</description>
+		<setters>
+			<set name="short">Deception, Persuasion, Disguise Kit</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Background Feature" id="ID_YCG_SKSS_BACKGROUND_FEATURE_NIGHTMARES_OF_YESTERYEAR" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>
+	</element>
+	
+	<element name="Feature: Nightmares of Yesteryear" type="Background Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_FEATURE_NIGHTMARES_OF_YESTERYEAR">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You have dreams about your past failings. When you take a long rest your dreams will dwell on those lost. While they may offer premonitions of the future, they will prevent you from ever truly finding solace in slumber.</p>
+		</description>
+		<sheet alt="Nightmares of Yesteryear" />
+	</element>
+</elements>
