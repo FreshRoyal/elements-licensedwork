@@ -1,7 +1,9 @@
 # elements-licensedwork
-This repo is for implementations for Aurora of content that would be considered official (or pseudo-official) for the series involved, but would not be considered official by WotC.
+\This repo is for implementations for Aurora of content that would be considered official (or pseudo-official) for the series involved, but would not be considered official by WotC.
 
 Basically, it's for cases of creators or companies producing or licensing 5e options without WotC being involved.
+
+Index: https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work.index
 
 # Content Included and Reasoning
 
@@ -15,7 +17,7 @@ Basically, it's for cases of creators or companies producing or licensing 5e opt
 
 
 
-Index: https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work.index
+
 
 
 Feel free to suggest anything that should be added by reporting an issue in this repo.
