@@ -3,11 +3,11 @@ This repo is for implementations for Aurora of content that would be considered 
 
 Basically, it's for cases of creators or companies producing or licensing 5e options without WotC being involved.
 
-__Content Included and Reasoning__
+# Content Included and Reasoning
 
 [Shovel Knight: Shovels and Shields](https://adamcohen.myportfolio.com/shovel-knight-bringing-platformers-to-tabletop): Yacht Club Games (developers of Shovel Knight) commissioned this for an April Fools blog post.
 
-__Content Planned__
+# Content Planned
 
 [League of Legends: Campaign Handbook](https://orkidian.itch.io/dnd-leagueoflegends): Orkidian originally started this project as a piece of fanwork, but they now work for Riot Games (developers of LoL). This would make her supplement "pseudo-official".
 
@@ -15,7 +15,7 @@ __Content Planned__
 
 
 
-Index:
+Index: https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work.index
 
 
 Feel free to suggest anything that should be added by reporting an issue in this repo.
