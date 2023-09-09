@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Code of the Adventurer from Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="knight-adventurer.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/knight-adventurer.xml" />
 		</update>
 	</info>
@@ -77,7 +77,6 @@
 			<stat name="devoted:melee:attack" value="proficiency" />
 			<stat name="devoted:melee:attack" value="dexterity:modifier" bonus="bonus" />
 			<stat name="devoted:melee:attack" value="strength:modifier" bonus="bonus" />
-			<stat name="devoted:melee:damage" value="proficiency" />
 			<stat name="devoted:melee:damage" value="dexterity:modifier" bonus="bonus" />
 			<stat name="devoted:melee:damage" value="strength:modifier" bonus="bonus" />
 			<select type="Archetype Feature" name="Devoted Weapon Damage Type" supports="Adventurer Devoted Weapon Damage SnS" />
@@ -96,7 +95,6 @@
 			<grant type="Proficiency" id="ID_YCG_SKSS_PROFICIENCY_WEAPON_PROFICIENCY_DEVOTED_WEAPON_RANGED" />
 			<stat name="devoted:ranged:attack" value="proficiency" />
 			<stat name="devoted:ranged:attack" value="dexterity:modifier" bonus="bonus" />
-			<stat name="devoted:ranged:damage" value="proficiency" />
 			<stat name="devoted:ranged:damage" value="dexterity:modifier" bonus="bonus" />
 			<stat name="devoted:ranged:dice size" value="6" bonus="base" />
 			<stat name="devoted:range:normal" value="30" bonus="base" />
