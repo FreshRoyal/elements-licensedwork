@@ -9,15 +9,11 @@ Index: https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master
 
 [Shovel Knight: Shovels and Shields](https://adamcohen.myportfolio.com/shovel-knight-bringing-platformers-to-tabletop): Yacht Club Games (developers of Shovel Knight) commissioned this for an April Fools blog post.
 
+[DOOM Eternal: Assault On Armaros Station](https://archive.org/details/doom-eternal-assault-on-armaros-station/mode/2up): Matt Mercer created this module for a ZeniMax-sponsored one-shot. It was later released as a paid licensed PDF on the Critical Role store.
+
 # Content Planned
 
 [League of Legends: Campaign Handbook](https://orkidian.itch.io/dnd-leagueoflegends): Orkidian originally started this project as a piece of fanwork, but they now work for Riot Games (developers of LoL). This would make her supplement "pseudo-official".
-
-[DOOM Eternal: Assault On Armaros Station](https://archive.org/details/doom-eternal-assault-on-armaros-station/mode/2up): Matt Mercer created this module for a ZeniMax-sponsored one-shot. It was later released as a paid licensed PDF on the Critical Role store.
-
-
-
-
 
 
 Feel free to suggest anything that should be added by reporting an issue in this repo.
