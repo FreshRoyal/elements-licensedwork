@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Shovel Knight - Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="licensed-work.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work.index" />
 		</update>
 	</info>
