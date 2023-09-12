@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>DOOM Eternal Source</name>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/source.xml" />
+		</update>
+	</info>
+	<element name="DOOM Eternal: Assault on Armaros Station" type="Source" source="Core" id="ID_CRIT_SOURCE_DOOM_ETERNAL">
+		<description>
+			<p>What happens when you mix the latest installment of the most beloved franchise in FPS history with the storytelling possibilities of a tabletop RPG? Pure Argent Energy magic.</p>
+			<p class="indent">Whether you’re here because you were entertained by the slapstick carnage of <i>Critical Role’s DOOM Eternal One-Shot</i> or simply because you’re a die-hard <i>DOOM</i> enthusiast, this action-packed supplement for the world’s oldest roleplaying game is made for you. Within these pages, you’ll find all of the narrative tools you’ll need for a few sessions of your own tabletop escapades featuring humanity’s never-ending battle against the forces of evil.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">DEAAS</set>
+			<set name="image">https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/DEAAS.png</set>
+			<set name="url">https://archive.org/details/doom-eternal-assault-on-armaros-station/page/n37/mode/2up</set>
+			<set name="author" abbreviation="CR" url="https://critrole.com/">Critical Role, Id Software</set>
+			<set name="release">20200316</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

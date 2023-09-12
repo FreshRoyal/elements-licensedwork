@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>DOOM Eternal - Assault on Armaros Station</name>
+		<update version="0.0.1">
+			<file name="doom-eternal.index" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/source.xml" />
+		<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/items.xml" />
+	</files>
+</index>

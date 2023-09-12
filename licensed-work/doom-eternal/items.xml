@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Items from DDOM Eternal</name>
+		<update version="0.0.1">
+			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/items.xml" />
+		</update>
+	</info>
+	
+	<element name="Stimpack" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_STIMPACK">
+		<description>
+			<p>As an action, you or a creature of your choice within 5 feet of you regains 2d8 + 2 hit points. When used, this device is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Medkit" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_MEDKIT">
+		<description>
+			<p>As an action, you or a creature of your choice within 5 feet of you regains 4d8 + 4 hit points. When used, this device is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dampener" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_ARGENT_DAMPENER">
+		<description>
+			<p>As an action, you throw this device at a target up to 60 feet away, forcing them to make a DC 15 Dexterity saving throw. On a failure, the target is unable to utilize or absorb any Argent energy for 1d4 rounds.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="grenade">Weapon</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Argent Dampener" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_ARGENT_DAMPENER">
+		<description>
+			<p>As an action, you throw this device at a target up to 60 feet away, forcing them to make a DC 15 Dexterity saving throw. On a failure, the target is unable to utilize or absorb any Argent energy for 1d4 rounds.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="grenade">Weapon</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Adhesive EMP Grenade" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_ADHESIVE_EMP_GRENADE">
+		<description>
+			<p>As an action, you throw this device at a creature or object up to 60 feet away. If the target is a creature, they must make a DC 15 Dexterity saving throw. On a failure, any electronic devices within 10 feet of the target are temporarily disabled for 1d4 turns. Electronic door locks are unlocked and Mechs are stunned for the duration. This has no effect on Argent technology.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="grenade">Weapon</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+
+	<element name="ARC Artillery Shells" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_ARC_ARTILLERY_SHELLS">
+		<description>
+			<p><strong><em>Improvised weapons.</em></strong> Artillery shells can be detonated as the target of ranged attacks (AC 15) or thrown up to 30 feet (DC 12 Strength check); any character within 15 feet of a detonated shell takes 3d6 piercing damage (DC 12 Dexterity save for half damage), and has disadvantage on attacks and skill checks until the end of their next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="improvised grenade">Weapon</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Datapad" type="Magic Item" source="DOOM Eternal: Assault on Armaros Station" id="ID_CRIT_DEAAS_MAGIC_ITEM_DATAPAD">
+		<description>
+			<p>This small, metallic tablet features an illuminated screen that displays five rows of strange human markings. While you are holding this datapad, you can use an action to access any of the fol- lowing echo recordings with a successful DC 15 Intelligence (Investigation) check:</p>
+			<ul>
+  				<li>ARC Lead Director Samuel Hayden (Echo Recording 1)</li>
+				<li>Armaros Energy Systems Manager Franklin Bell (Echo Recording 2)</li>
+				<li>Safety Supervisor Carl Ingberd, January 5th (Echo Recording 3)</li>
+				<li>Safety Supervisor Carl Ingberd, January 12th (Echo Recording 4)</li>
+				<li>Science Officer Angela Driggs (Echo Recording 5)</li>
+			</ul>
+			<p class="indent">Alternatively, you can use an action to damage the datapad and play a random echo recording. Roll 1d6 to determine which of the five recordings is played (re-roll any result of 6). The datapad can only be damaged three times like this before it breaks and no longer functions. In addition, the datapad can be used as a remote device for accessing any computer console in the Armaros Station Comms Center.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Item</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+
+</elements>
