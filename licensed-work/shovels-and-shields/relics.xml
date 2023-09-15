@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Relics from Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="relics.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/relics.xml" />
 		</update>
 	</info>
@@ -490,11 +490,25 @@
 	</element>
 
 	<element name="The Bomb Bag (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_BOMB_BAG">
-		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<supports>Knight Relic SnS</supports>
 		<prerequisite>9th level, Code of the Adventurer</prerequisite>
-		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER,!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_BOMB_BAG_TREASURE_HUNTER</requirements>
 		<description>
 			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
+			<p>A small bag of bombs that mysteriously refills each morning. As an attack action you can throw a handful of them. Each creature in a 20-foot-radius centered on a point within 120 feet must make a Dexterity saving throw. A creature takes 6d6 fire damage on a failed save, or half as much damage on a successful one. You may use this bag a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Bomb Bag" action="Action" usage="{{relic:bomb:usage}}/Day">
+			<description>You can throw bombs. Each creature in a 20-ft radius centered on a point within 120 ft must make a Dexterity saving throw. A creature takes 6d6 fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:bomb:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:bomb:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="The Bomb Bag (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_BOMB_BAG_TREASURE_HUNTER">
+		<supports>Adventurer Treasure Relic SnS</supports>
+		<requirements>!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_BOMB_BAG</requirements>
+		<description>
 			<p>A small bag of bombs that mysteriously refills each morning. As an attack action you can throw a handful of them. Each creature in a 20-foot-radius centered on a point within 120 feet must make a Dexterity saving throw. A creature takes 6d6 fire damage on a failed save, or half as much damage on a successful one. You may use this bag a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
 		</description>
 		<sheet alt="The Bomb Bag" action="Action" usage="{{relic:bomb:usage}}/Day">
@@ -525,9 +539,9 @@
 	</element>
 
 	<element name="The Eye of True Sight (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_EYE_OF_TRUE_SIGHT">
-		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<supports>Knight Relic SnS</supports>
 		<prerequisite>9th level, Code of the Adventurer</prerequisite>
-		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER,!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_EYE_OF_TRUE_SIGHT_TREASURE_HUNTER</requirements>
 		<description>
 			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
 			<p>You gain proficiency on Wisdom Checks (Perception) that rely on sight. You are also able to see through magical darkness as if it was daylight. As a bonus action you may also reveal the Hit Points of one weakness of a target. You may use the bonus action ability a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
@@ -540,13 +554,41 @@
 			<stat name="relic:eye:usage" value="1" bonus="bonus" />
 		</rules>
 	</element>
+	<element name="The Eye of True Sight (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_TREASURE_HUNTER">
+		<supports>Adventurer Treasure Relic SnS</supports>
+		<requirements>!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_EYE_OF_TRUE_SIGHT</requirements>
+		<description>
+			<p>You gain proficiency on Wisdom Checks (Perception) that rely on sight. You are also able to see through magical darkness as if it was daylight. As a bonus action you may also reveal the Hit Points of one weakness of a target. You may use the bonus action ability a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Eye of True Sight" usage="{{relic:eye:usage}}/Day">
+			<description>You are proficienct with Perception checks that rely on sight. You can also see through magical darkness as if it was daylight. As a bonus action, you may also reveal the hp of one weakness of a target.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:eye:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:eye:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
 
 	<element name="The Grapple Anchor (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_GRAPPLE_ANCHOR">
-		<supports>Knight Relic SnS, Adventurer Treasure Relic SnS</supports>
+		<supports>Knight Relic SnS</supports>
 		<prerequisite>9th level, Code of the Adventurer</prerequisite>
-		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER</requirements>
+		<requirements>[level:9],ID_YCG_SKSS_ARCHETYPE_KNIGHT_ADVENTURER,!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_GRAPPLE_ANCHOR_TREASURE_HUNTER</requirements>
 		<description>
 			<p><em>2 Relic Points, 9th level, Code of the Adventurer</em></p>
+			<p>A metallic gauntlet with an anchor protruding from its end. As an action you may target an opponent within 20 feet and attempt to grapple them. On a success, you may draw the target towards you, or keep them in place, imposing disadvantage on Dexterity Saving Throws. The target may spend its action to attempt to break hold of the grapple. You may use The Grapple Anchor a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
+		</description>
+		<sheet alt="The Grapple Anchor" action="Action" usage="{{relic:grapple:usage}}/Day">
+			<description>You may target an opponent within 20 feet and attempt to grapple them. On a success, you may draw the target towards you, or keep them in place, imposing disadvantage on Dexterity saving throws. The target may spend its action to attempt to break hold of the grapple.</description>
+		</sheet>
+		<rules>
+			<stat name="relic:grapple:usage" value="wisdom:modifier" bonus="bonus" />
+			<stat name="relic:grapple:usage" value="1" bonus="bonus" />
+		</rules>
+	</element>
+	<element name="The Grapple Anchor (2 Relic)" type="Class Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_GRAPPLE_ANCHOR_TREASURE_HUNTER">
+		<supports>Adventurer Treasure Relic SnS</supports>
+		<requirements>!ID_YCG_SKSS_CLASS_FEATURE_KNIGHT_RELIC_THE_GRAPPLE_ANCHOR</requirements>
+		<description>
 			<p>A metallic gauntlet with an anchor protruding from its end. As an action you may target an opponent within 20 feet and attempt to grapple them. On a success, you may draw the target towards you, or keep them in place, imposing disadvantage on Dexterity Saving Throws. The target may spend its action to attempt to break hold of the grapple. You may use The Grapple Anchor a number of times per day equal to your Wisdom Modifier (Minimum of once).</p>
 		</description>
 		<sheet alt="The Grapple Anchor" action="Action" usage="{{relic:grapple:usage}}/Day">
