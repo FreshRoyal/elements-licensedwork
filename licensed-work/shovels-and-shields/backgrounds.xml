@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Backgrounds from Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="backgrounds.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/backgrounds.xml" />
 		</update>
 	</info>
@@ -34,7 +34,7 @@
 	<element name="Feature: Notorious Villain" type="Background Feature" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_BACKGROUND_FEATURE_NOTORIOUS_VILLAIN">
 		<supports>Background Feature</supports>
 		<description>
-			<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p>
+			<p>In every town you will find shelter, striking fear into the hearts of the common folk, hoping to avoid your wrath. You may also find respite amongst scum and villainy, should your goals align. Your presence may also draw the ire of would-be heroes seeking to make a name for themselves.</p>
 		</description>
 		<sheet alt="Notorious Villain" />
 	</element>
