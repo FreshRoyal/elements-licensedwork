@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items from Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/items.xml" />
 		</update>
 	</info>
@@ -250,7 +250,7 @@
 	
 	<!--Proficiencies-->
 	<element name="Tool Proficiency (Joustus set)" type="Proficiency" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_PROFICIENCY_GAMING_SET_PROFICIENCY_JOUSTUS_SET">
-		<supports>Gaming Set</supports>
+		<supports>Gaming Set, Tool</supports>
 		<requirements />
 		<description>
 			<p>
