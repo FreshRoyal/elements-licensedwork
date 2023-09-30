@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Items from DDOM Eternal</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/doom-eternal/items.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="rarity">Common</set>
@@ -26,7 +26,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="rarity">Uncommon</set>
@@ -39,7 +39,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="grenade">Weapon</set>
 			<set name="weight" lb="0">0 lb.</set>
@@ -53,7 +53,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="grenade">Weapon</set>
 			<set name="weight" lb="0">0 lb.</set>
@@ -67,7 +67,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="grenade">Weapon</set>
 			<set name="weight" lb="0">0 lb.</set>
@@ -81,7 +81,7 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="improvised grenade">Weapon</set>
 			<set name="weight" lb="0">0 lb.</set>
@@ -103,12 +103,11 @@
 		</description>
 		<setters>
 			<set name="keywords"></set>
-			<set name="category">Wondrous Item</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 	
-
 </elements>
