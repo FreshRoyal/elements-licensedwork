@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Knight from Shovels and Shields</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-knight.xml" url="https://raw.githubusercontent.com/FreshRoyal/elements-licensedwork/master/licensed-work/shovels-and-shields/class-knight.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
 	<element name="Knight" type="Class" source="Shovel Knight: Shovels and Shields" id="ID_YCG_SKSS_CLASS_KNIGHT">
 		<description>
 			<p>Long have tales been told of brave knights that wander the earth in search of riches and glory. Whether they wield an arsenal of arcane items or a modest shovel, these brave warriors wielded legendary weapons and relics against foe, undead, and dragon alike. From the shield guardian to the strangely shovel'd champion, these knights hope to make a name for themselves.</p>
-			<h4>ADVENTURES AT HEART</h4>
+			<h4>ADVENTURERS AT HEART</h4>
 			<p>At the dawn of the new age, when the wilds were still untamed, the lands were roamed by knights. To this day, they are often found in the wilderness or deep in the heart of dungeons, looking for their next big adventure with seldom a worry for their own safety. A forest full of monsters and longforgotten temples is but another location for them to plunder, and add to their growing legend.</p>
 			<p class="indent">Knights are a breed of adventurer unmatched in their unwavering loyalty to their cause. Similar to a paladin's devotion to spreading the good of a deity, a knight is born for adventure and glory. Often found with an arsenal of gadgetry at their side, these dungeon delvers won't rest in their pursuit of unending discovery. Despite their appearance, they rarely wear armor that is truly heavy, knowing that balancing movement and sturdiness is important.</p>
 			<h4>BECOMING A KNIGHT</h4>
